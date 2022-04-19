@@ -1,0 +1,59 @@
+
+/* .btn-red_14{
+    font-family: Lato;
+    border: none;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    color: white;
+    line-height: 52px;
+    padding: 0 40px;
+    letter-spacing: 0.65px;
+    font-size: 16px;
+} */
+
+.btn{
+    font-family: Lato;
+    border: 1px solid #ff3f3a;
+    font-size: 16px;
+    letter-spacing: 0.65px;
+    border-radius: 4px;
+    color: #ff3f3a;
+    line-height: 50px;
+    padding-left: 39px;
+    padding-right: 39px;
+    background: transparent;
+    font-weight: 700;
+    /* margin-bottom: 2px; */
+}
+
+.btn:hover{
+    border: none;
+    transition: 0.4s;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    color: white;
+    padding-left: 39px;
+    padding-right: 39px;
+}
+.btn14{
+    font-family: Lato;
+    border: 1px solid #ff3f3a;
+    font-size: 14px;
+    letter-spacing: 0.65px;
+    border-radius: 4px;
+    color: #ff3f3a;
+    line-height: 42px;
+    padding-left: 31px;
+    padding-right: 31px;
+    background: transparent;
+    font-weight: 700;
+    height: 44px;
+}
+.btn14:hover{
+    border: none;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+}

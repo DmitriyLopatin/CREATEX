@@ -1,0 +1,44 @@
+
+.about {
+    margin-top: 180px;
+    background: url(./about_bg.svg) bottom center no-repeat;
+    .wrapper_about {
+        background: url(./about_photo.jpg) left center no-repeat;
+        height: 560px;
+        max-width: 1230px;
+        margin: 0 auto;
+        .about_cratex {
+            float: right;
+            max-width: 390px;
+            .about_cratex-wwa {
+                margin-top: 1px;
+                margin-bottom: 14px;
+                letter-spacing: 1px;
+            }
+            .about_cratex-wc {
+                margin-top: 0px;
+                font-weight: 900;
+                font-size: 46px;
+            }
+            ul{
+                position: relative;
+                margin-left: 22px;
+                margin-top: 42px;
+                font-weight: 400;
+                line-height: 25.5px;
+                li{
+                    margin-bottom: 13px;
+                }
+                li::before{
+                    content: url(./about_marker.svg);
+                    position: absolute;
+                    left: -22px;
+                }
+            }
+            .about_btn{
+                display: flex;
+                margin-top: 48px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.courses {
+    margin: 180px auto;
+    max-width: 1230px;
+    padding-top: 2px;
+    height: 854px;
+    .courses_ready {
+        color: #1e212c;
+        letter-spacing: 1px;
+    }
+    .courses-subheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 14px;
+        .courses_feature {
+            height: 60px;
+            margin: 0;
+            color: #1e212c;
+            font-size: 46px;
+            font-weight: 900;
+        }
+        margin-bottom: 57px;
+    }
+    .courses_details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2.5%;
+        grid-row-gap: 4.6%;   
+    }
+}

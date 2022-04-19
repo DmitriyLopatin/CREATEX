@@ -1,0 +1,40 @@
+.card_content {
+    max-width: 600px;
+    height: 214px;
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    .card_content-text {
+        margin-left: 31px;
+        max-width: 322px;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        .card_position {
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 4px;
+            line-height: 21px;
+            padding: 2px 8px 0px 8px;
+            color: white;
+    
+        }
+        .card_course_name {
+            font-size: 20px;
+            line-height: 31px;
+        }
+        .card_footer {
+            color: #787a80;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            .card_cost {
+                color: #ff4242;
+                margin-right: 7px;
+            }
+        }
+    }
+}
