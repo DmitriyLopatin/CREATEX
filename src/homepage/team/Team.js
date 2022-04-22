@@ -1,6 +1,7 @@
 import './Team.scss'
 import TeamCard from '../../teamCard/Team-Card.js'
 import { useState } from 'react'
+import Testimonials from '../../tertimonials/Testimonials'
 
 
 export default function Team() { 
@@ -40,6 +41,7 @@ export default function Team() {
                 <div className='team_members'>
                     {st10.map(item => <TeamCard number={item} />)}
                 </div>
+                <Testimonials></Testimonials>
 
             </div>
         </section>

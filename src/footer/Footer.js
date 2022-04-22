@@ -61,10 +61,8 @@ export default function Footer() {
             </div>
             <div className="footer_bottom">
                 <div className='footer_bottom_content'>
-                    <div className='footer_rights'>
-
-                    </div>
-                    <div className='footer_gototop'></div>
+                    <p>	&#169; All rights reserved. Made with <span> &#9825; </span> by Createx Studio</p>
+                    <p><a href="#">GO TO TOP</a></p>
                 </div>
             </div>
         </footer>

@@ -28,6 +28,32 @@
     &_bottom{
         height: 58px;
         background: rgba($color: white, $alpha: 0.05);
+        &_content{
+            max-width: 1230px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 52px;
+            p{
+                font-size: 12px;
+                font-weight: 400;
+                color: white;
+                margin-top: 4px;
+                display: flex;
+                align-items: center;
+            }
+            span{
+                color: red;
+                font-size: 25px;
+                margin: 0 4px;
+                
+            }
+            a{
+                font-size: 14px;
+                color: rgba($color: white, $alpha: .6);
+            }
+        }
     } 
 }
 .footer_about{

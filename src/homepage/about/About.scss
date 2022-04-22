@@ -23,11 +23,12 @@
             ul{
                 position: relative;
                 margin-left: 22px;
-                margin-top: 42px;
+                margin-top: 44px;
                 font-weight: 400;
-                line-height: 25.5px;
+                line-height: 25.2px;
                 li{
                     margin-bottom: 13px;
+                    margin-left: 10px;
                 }
                 li::before{
                     content: url(./about_marker.svg);

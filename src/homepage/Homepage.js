@@ -7,7 +7,8 @@ import Events from './events/Events'
 import Subscribe from '../subscribe/Subscribe.js'
 import  Certificate from './certificate/Certificate'
 import  Team from './team/Team.js'
-import  Blog from '../blog/Blog.js'
+import  Blog from '../blogs/Blogs.js'
+
 
 let Homepage = () => {
     return (
@@ -19,7 +20,6 @@ let Homepage = () => {
             <Events/>
             <Certificate/>
             <Team/>
-            {/* <Testimonials/> */}
             <Blog/>
             <Subscribe/>
      

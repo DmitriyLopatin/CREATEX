@@ -1,0 +1,25 @@
+.blogs{
+    max-width: 1232px;
+    margin: 120px auto 180px auto;
+    height: 659px;
+    &_heading{
+        font-size: 17px;
+        letter-spacing: 0.4px;
+    }
+    &_notification{
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        p{
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 58px;
+        }
+    }
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1232px;
+    }
+}

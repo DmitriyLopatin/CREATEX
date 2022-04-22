@@ -17,7 +17,7 @@ const teamdata = [
     [Dianne, 'Founder and CEO', 'Dianne Russell','https://www.facebook.com/dianne.russell.7965'],
     [Jerome, 'Founder and Program Director', 'Jerome Bell','https://www.facebook.com/profile.php?id=100011012733715'],
     [Kristin, 'Marketer, Curator of Marketing Course', 'Kristin Watson','https://www.facebook.com/kristin.watson.585'],
-    [Marvin, 'PM,Curator of Management Course', 'Marvin McKinney','https://www.facebook.com/marvin.mckiney'],
+    [Marvin, 'PM, Curator of Management Course', 'Marvin McKinney','https://www.facebook.com/marvin.mckiney'],
     [Li, 'Curator of HR & Recruting Course', 'Leslie Alexander Li','https://www.facebook.com/leslie.alexander.9216'],
     [Kathryn, 'Analyst and Marketing specialist', 'Kathryn Murphy','https://www.facebook.com/profile.php?id=100078710676692'],
     [Brooklyn, 'Curator of Development Course', 'Brooklyn Simmons','https://www.facebook.com/brooklyn.simmons3'],
