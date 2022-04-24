@@ -1,5 +1,10 @@
 import './Benefits.scss'
-const arr = ['Experienced Tutors','Feedback & Support','24/7 Online Library','Community']
+const arr = [
+    ["\ue900", 'Experienced Tutors'],
+    ["\ue901", 'Feedback & Support'],
+    ["\ue902",'24/7 Online Library'],
+    ["\ue903", 'Community']
+]
 export default function Benefits() {
     return (
         <section className="benefits">
@@ -9,7 +14,7 @@ export default function Benefits() {
                     <p className='benefits_header-how'>That's how we do it</p>
                 </div>
                 <div className="benefits_summary">
-                    {arr.map((item,index) => <p className={`benefit_${index}`}>{item}</p>)}
+                    {arr.map((item,index) => <p data={item[0]} className='benefits_item'>{item[1]}</p>)}
                 </div>
                 <div className='text'>
                     <h2>Only practicing tutors</h2>

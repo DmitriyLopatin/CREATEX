@@ -1,17 +1,59 @@
 .testimonials{
     max-width: 1242px;
     margin: 180px auto 0 auto;
-    p{
-        text-align: center;
-        color: #1E212C;
-    }
     &_heading{
         font-size: 17px;
         letter-spacing: 0.4px;
+        text-align: center;
+        color: #1E212C;
     }
     &_notification{
         font-size: 46px;
         font-weight: 900;
         line-height: 80px;  
+        text-align: center;
+        color: #1E212C;
     }
+    &_content{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            text-align: center;
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            line-height: 38px;
+            // margin-left: 10px;
+            font-size: 30px;
+        }
+        span:hover{
+            transition: 0.3s;
+            color: white;
+            background: #FF3F3A;
+            border-radius: 50%;
+            cursor: pointer;
+            user-select:none; 
+        }  
+    }
+    &_main{
+        overflow: hidden;
+        width: 1020px;
+        height: 344px; 
+        background-color: white;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+    }
+    &_indicator{
+        text-align: center;
+        line-height: 111px;
+        font-size: 44px;
+        letter-spacing: 5px;
+        color: #B3B7BC;
+    }
+    &_gray{
+        color:  #424551;
+    } 
 }

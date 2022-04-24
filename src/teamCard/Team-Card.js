@@ -7,9 +7,6 @@ import Kristin from './Kristin.svg'
 import Li from './Li.svg'
 import Marvin from './Marvin.svg'
 import Dianne from './Dianne.svg'
-import f from './Facebook.svg'
-import i from './Instagram.svg'
-import li from './Linked-In.svg'
 import React from 'react'
 
 
@@ -41,9 +38,9 @@ export default function TeamCard(props) {
         <div className="teamcard">
             <div className='teamcard__shadow' style={style} onMouseEnter={hover} onMouseLeave={hoverOff}>
                 <div className='teamcard__socials' ref={social}>
-                    <a href={teamdata[props.number][3]} target='_blank'><img src={f} alt="facebook" /></a>
-                    <a href=""><img src={i} alt="instagram" /></a>
-                    <a href=""><img src={li} alt="linked-in" /></a>
+                    <a href={teamdata[props.number][3]} target='_blank' data={"\uf900"}></a>
+                    <a href="#" target='_blank' data={"\uf904"}></a>
+                    <a href="#" target='_blank' data={"\uf905"}></a>
                 </div>
             </div>
             <div className='teamcard__descriprion'>

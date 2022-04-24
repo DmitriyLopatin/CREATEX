@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'iconsoc';
+    src: url(../footer/fonts/iconsoc.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 .teamcard{
     width: 285px;
     height: 416px;
@@ -31,5 +38,18 @@
     bottom: 17px;
     right: 20px;
     width: 84px;
+    & a{
+        color: rgba($color: white, $alpha: 0.5);  
+        background: none !important; 
+       }
+    & a::before{
+        font-weight: 400;
+        font-family: iconsoc;
+        font-size: 20px;
+        content: attr(data);
+    }
+    & a:hover{
+        color: white;
+    }
 }
 

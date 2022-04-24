@@ -27,26 +27,25 @@
         display: flex;
         align-items: center;
         margin-top: 62px;       
-        @for $i from 0 through 3{
-            .benefit_#{$i}{
-                color: #9A9CA5;
-                max-width: 307px;
-                flex: 1;
-                text-align: center;
-            }
-            .benefit_#{$i}:hover{
-                border: 1px solid #ff3f3a;
-                border-radius: 4px;
-                color: #ff3f3a;
-                line-height: 46px;
-                transition: 0.3s;
-            }
-            .benefit_#{$i}::before{
-                font-family: iconmoon;
-                content: "\e900";
-                margin-right: 8px;
-            }
-        }  
+        .benefits_item{
+            color: #9A9CA5;
+            max-width: 307px;
+            flex: 1;
+            text-align: center;
+        }
+        .benefits_item:hover{
+            border: 1px solid #ff3f3a;
+            border-radius: 4px;
+            color: #ff3f3a;
+            line-height: 46px;
+            transition: 0.3s;
+        }
+        .benefits_item::before{
+            font-family: iconmoon;
+            content: attr(data);
+            margin-right: 8px;
+        }
+         
     }
     .text{
         max-width: 495px;
