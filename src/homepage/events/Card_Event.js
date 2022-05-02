@@ -14,7 +14,7 @@ export default function CardEvent(props){
                 <p className='eventInfo_name'>{props.events}</p>
                 <p className='eventInfo_type'>{props.type}</p>
             </div>
-            <Button14 text={'View more'}></Button14>
+            <Button14 >View more</Button14>
         </div>
     )
 }

@@ -1,10 +1,10 @@
 .team{
     background: url(./team_bg.svg) top center no-repeat;
-    .team_container{
+    &_container{
         padding-top: 166px;
         max-width: 1230px;
         height: 1570px;
-        margin: -45px auto 0 auto;
+        margin: -165px auto 0 auto;
     }
 }
 .team_header{
@@ -45,6 +45,7 @@
 }
 .team_members{
     margin-top: 47px;
+    margin-bottom: 102px;
     width: 100%;
     display: flex;
     justify-content: space-between;

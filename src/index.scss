@@ -7,14 +7,32 @@
 li{
   list-style-type: none;
 }
+
 a{
   text-decoration: none;
 }
+
 body{
   font-family: Lato;
   font-style: normal;
   font-weight: 700;
 }
+
 :link, :visited {
 	text-decoration: none;
-	}
+}
+
+.heading{
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 80px;  
+  text-align: center;
+  color: #1E212C;
+}
+
+.notification{
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #1E212C;
+}

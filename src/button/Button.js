@@ -1,12 +1,15 @@
-import './Button.css'
+import  classess from './Button.module.css'
+import {Link} from 'react-router-dom'
 
-export  function Button(props){
+
+export  function Button({children, ...props}){
+    // let url = useLocation()
     return(
-        <a href='#' className='btn'>{props.text}</a>
+        <Link to={`${props.link}`} className={classess.btn}>{children}</Link>
     )
 }
-export  function Button14(props){
+export  function Button14({children, ...props}){
     return(
-        <a href='#' className='btn14'>{props.text}</a>
+        <a href='#' className={classess.btn14}>{children}</a>
     )
 }

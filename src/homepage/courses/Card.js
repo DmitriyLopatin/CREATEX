@@ -1,5 +1,5 @@
 import './Card.scss'
-// import Bell from './staff/Jerome_Bell.jpg'
+
 function Card(props) {
     let style = {
         backgroundColor: props.col

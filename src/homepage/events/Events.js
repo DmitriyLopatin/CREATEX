@@ -36,7 +36,7 @@ export default function Events(){
                 </div>
                 <div className='events_footer'>
                     <h3>Do you want more?</h3>
-                    <Button text={'Explore all events'}></Button>
+                    <Button>Explore all events</Button>
                 </div>
             </div>
         </section>

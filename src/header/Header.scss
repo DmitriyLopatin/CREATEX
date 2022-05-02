@@ -12,9 +12,10 @@ ul{
 }
 
 .header{
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
-    z-index: 99999;
+    z-index: 1;
     
 }
 .left{
@@ -62,14 +63,14 @@ ul{
 .login::before{
     content: url(./profile.svg);
 }
-.scroll{
-    background-color:  #fedcd3;
-    box-shadow: 1px 1px 9px 5px gray;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition: 0.3s;
-    padding-top: 0px;
-    height: 62px;
-}
+// .scroll{
+//     background-color:  #fedcd3;
+//     box-shadow: 1px 1px 9px 5px gray;
+//     border-bottom-left-radius: 20px;
+//     border-bottom-right-radius: 20px;
+//     transition: 0.3s;
+//     padding-top: 0px;
+//     height: 62px;
+// }
 
 

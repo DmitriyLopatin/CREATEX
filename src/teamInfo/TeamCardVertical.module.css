@@ -1,0 +1,36 @@
+.main{
+    width: 391px;
+    height: 440px;
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+}
+.main:hover{
+    box-shadow: 0px 5px 60px -20px gray;
+}
+.mainBlock{
+    margin: 21px 24px 0 23px;
+}
+.area{
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    line-height: 21px;
+    padding: 2px 8px 4px 8px;
+    color: white;
+}
+.name{
+    margin-top: 22px;
+    font-size: 20px;
+    line-height: 31px;
+}
+.footer{
+    margin-top: 20px;
+    color: #787a80;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.cost{
+    color: #ff4242;
+    margin-right: 7px;
+}

@@ -14,7 +14,6 @@ let users = [
 
 
 export default function Testimonials() {
-    let gray = React.createRef()
     let [colorGray, setColorGray] = useState(0)
     let [z, setZ] = useState(0)
     let nextRight = ()=>{
@@ -31,24 +30,26 @@ export default function Testimonials() {
     }
     return (
         <section className='testimonials'>
-            <p className='testimonials_heading'>TESTIMONIALS</p>
-            <p className='testimonials_notification'>What our students say</p>
-            <div className='testimonials_content'>
-                <span onClick={previousLeft}>{String.fromCharCode(8592)}</span>
-                <div className='testimonials_main'>
-                    {users.map(item => <TestimonialsCard shift={colorGray} img={item[0]} text={item[1]} name={item[2]} position={item[3]}></TestimonialsCard>)}
+            <div className='testimonials_wrapper'>
+                <p className='testimonials_heading'>TESTIMONIALS</p>
+                <p className='testimonials_notification'>What our students say</p>
+                <div className='testimonials_content'>
+                    <span onClick={previousLeft}>{String.fromCharCode(8592)}</span>
+                    <div className='testimonials_main'>
+                        {users.map(item => <TestimonialsCard shift={colorGray} img={item[0]} text={item[1]} name={item[2]} position={item[3]}></TestimonialsCard>)}
+                    </div>
+                    <span onClick={nextRight}>{String.fromCharCode(8594)}</span>
+    
                 </div>
-                <span onClick={nextRight}>{String.fromCharCode(8594)}</span>
-
-            </div>
-            <div className='testimonials_indicator'>
-                {users.map((item, index) => {
-                    if (index == z){
-                         return <span className='testimonials_gray'> &#8212;</span>
-                    } else {
-                        return <span> &#8212;</span>
-                    }
-                })}
+                <div className='testimonials_indicator'>
+                    {users.map((item, index) => {
+                        if (index == z){
+                             return <span className='testimonials_gray'> &#8212;</span>
+                        } else {
+                            return <span> &#8212;</span>
+                        }
+                    })}
+                </div>
             </div>
         </section>
     )

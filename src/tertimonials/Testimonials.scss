@@ -1,6 +1,12 @@
 .testimonials{
-    max-width: 1242px;
-    margin: 180px auto 0 auto;
+    background: url(./testimonials_background.svg) top center no-repeat;
+    height: 736px;
+    padding-top: 80px;
+    &_wrapper{
+        max-width: 1242px;
+        margin: auto;
+
+    }
     &_heading{
         font-size: 17px;
         letter-spacing: 0.4px;

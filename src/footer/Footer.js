@@ -1,5 +1,6 @@
 import './Footer.scss'
 import logo from './logo.svg'
+import {Link} from 'react-router-dom'
 
 let soc = [
     ["\uf900", 'https://www.facebook.com/'],
@@ -18,7 +19,7 @@ export default function Footer() {
             <div className="footer_top">
                 <div className='footer_top_content'>
                     <div className='footer_about'>
-                        <a href="#"><img src={logo} alt="createX" /></a>
+                        <Link to="/"><img src={logo} alt="createX" /></Link>
                         <p>Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
                         <div className='footer_socials'>
                             {soc.map(item => <a  data={item[0]} href={item[1]}></a>)}
@@ -29,7 +30,7 @@ export default function Footer() {
                         <p>SITE MAP</p>
                       <ul>
                             <li><a href="">About Us</a></li>
-                            <li><a href="">Courses</a></li>
+                            <li><Link to="/courses">Courses</Link></li>
                             <li><a href="">Events</a></li>
                             <li><a href="">Blog</a></li>
                             <li><a href="">Contacts</a></li>
@@ -61,7 +62,7 @@ export default function Footer() {
             </div>
             <div className="footer_bottom">
                 <div className='footer_bottom_content'>
-                    <p>	&#169; All rights reserved. Made with <span> &#9825; </span> by Createx Studio</p>
+                    <p>	&copy; All rights reserved. Made with <span> &#9825; </span> by Createx Studio</p>
                     <p><a href="#">GO TO TOP</a></p>
                 </div>
             </div>

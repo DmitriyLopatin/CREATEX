@@ -9,6 +9,7 @@ import Card from './Card.js';
 import { Button } from '../../button/Button.js'
 
 
+
 const courses = [
     { 
         ava: Bell, position: 'Marketing', course: 'The Ultimate Google Ads Training Course', cost: '$100', author: 'by Jerome Bell', color: '#03CEA4' },
@@ -31,7 +32,7 @@ export default function Courses() {
                 <p className='courses_ready'>READY TO LEARN?</p>
                 <div className='courses-subheader'>
                     <p className='courses_feature'>Featured Courses</p>
-                    <Button text={'View all courses'}></Button>
+                    <Button link={"/courses"}>View all courses</Button>
                 </div>
                 <div className='courses_details'>
                     {courses.map(item=><Card path={item.ava} position={item.position} cor={item.course} cost={item.cost} aut={item.author} col={item.color}></Card>)}

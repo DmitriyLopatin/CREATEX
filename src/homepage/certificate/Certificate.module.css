@@ -1,0 +1,36 @@
+.main{
+    background: url(./certificate_main.svg) top right -60px no-repeat;
+    max-width: 1232px;
+    margin: 120px auto;
+    position: relative;
+    z-index: 2;
+}
+.container{
+    max-width: 397px;
+    height:500px;
+}
+.id{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #1e212c;
+}
+.conformation{
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 900;
+    color: #1e212c;
+    margin-top: 9px;
+}
+.proof{
+    font-weight: 400;
+    color: #424551;
+    line-height: 25.6px;
+    margin-top: 46px;
+    letter-spacing: 0px;
+}
+.links{
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
