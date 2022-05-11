@@ -3,13 +3,18 @@ import {Link} from 'react-router-dom'
 
 
 export  function Button({children, ...props}){
-    // let url = useLocation()
+    let style = {
+        width : props.width + 'px',
+    }
     return(
-        <Link to={`${props.link}`} className={classess.btn}>{children}</Link>
+        <Link to={`${props.link}`} className={classess.btn} style={style}>{children}</Link>
     )
 }
 export  function Button14({children, ...props}){
+    let style = {
+        width : props.width + 'px',
+    }
     return(
-        <a href='#' className={classess.btn14}>{children}</a>
+        <a href='' className={classess.btn14} style={style}>{children}</a>
     )
 }

@@ -2,7 +2,7 @@ import './Footer.scss'
 import logo from './logo.svg'
 import {Link} from 'react-router-dom'
 
-let soc = [
+export let soc = [
     ["\uf900", 'https://www.facebook.com/'],
     ['\uf901', 'https://twitter.com/'],
     ['\uf902', 'https://youtube.com'],
@@ -13,7 +13,7 @@ let soc = [
 
 
 export default function Footer() {
-    let z = `\uf901`
+    
     return (
         <footer className='footer'>
             <div className="footer_top">

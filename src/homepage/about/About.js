@@ -16,7 +16,7 @@ export default function About(){
                             <li>Tincidunt sagittis neque sem ac eget.</li>
                             <li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
                         </ul>
-                        <div className='about_btn'><Button14>More about us</Button14> </div>
+                        <div className='about_btn'><Button14 width = {136}>More about us</Button14> </div>
                     </div>
                 </div>
             </section>
