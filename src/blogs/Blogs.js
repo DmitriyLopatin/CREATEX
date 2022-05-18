@@ -10,7 +10,7 @@ export default function Blog(){
             <p className='blogs_heading'>OUR BLOG</p>
             <div className='blogs_notification'>
                 <p>Latest posts</p>
-                <Button>Go to blog</Button>
+                <Button width={158}>Go to blog</Button>
             </div>
             <div className='blogs_content'>
                {blogsNum.map(item=><BlogCard num={item}></BlogCard>)}

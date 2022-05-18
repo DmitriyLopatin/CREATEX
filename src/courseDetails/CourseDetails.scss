@@ -8,6 +8,7 @@
 
 .courseDetails {
     background: url(./images&icons/courseDetails_background_1.svg) top center no-repeat;
+
     &-heading {
         margin-top: 10px;
         font-size: 46px;
@@ -15,6 +16,7 @@
         line-height: 59px;
         color: #1E212C;
     }
+
     &-notification {
         font-size: 17px;
         letter-spacing: 0.4px;
@@ -454,11 +456,13 @@
     &__register {
         background: url(./images&icons/courseDetails_register-bg.svg) top center no-repeat;
         height: 1446px;
+
         &-content {
             max-width: 1230px;
             margin: 0 auto;
             background: url(./images&icons/courseDetails_register-bg2.svg) left 0px bottom 14px no-repeat;
         }
+
         &-form {
             max-width: 495px;
             height: 532px;
@@ -466,19 +470,23 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
             div {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
             }
         }
+
         &-details {
             height: 306px;
+
             p {
                 font-weight: 400;
                 color: #424551;
                 line-height: 37px;
             }
+
             input {
                 border: 1px solid #d7dadd;
                 border-radius: 4px;
@@ -493,24 +501,40 @@
     }
 
     //-------course couresel-----
-    &__courseCarousel{
+    &__courseCarousel {
         max-width: 1230px;
         margin: 116px auto;
-        &-nav{
-           display: flex; 
-           justify-content: space-between;
+
+        &-nav {
+            display: flex;
+            justify-content: space-between;
         }
-        &-content{
+
+        &-content {
             margin-top: 60px;
             display: flex;
             overflow: hidden;
         }
+
+        &-finish {
+            max-width: 580px;
+            display: flex;
+            justify-content: space-between;
+            margin: 80px auto 0 auto;
+            p {
+                font-size: 28px;
+                line-height: 52px;
+            }
+            
+        }
     }
-    &__teamArrows{
+
+    &__teamArrows {
         position: relative;
         // right: -9px;
         top: 33px;
-        span{
+
+        span {
             text-align: center;
             display: inline-block;
             width: 48px;
@@ -518,13 +542,14 @@
             line-height: 38px;
             font-size: 30px;
         }
-        span:hover{
+
+        span:hover {
             transition: 0.3s;
             color: white;
             background: #FF3F3A;
             border-radius: 50%;
             cursor: pointer;
-            user-select:none; 
-        }  
+            user-select: none;
+        }
     }
 }

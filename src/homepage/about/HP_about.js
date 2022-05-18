@@ -1,9 +1,9 @@
-import './About.scss'
+import './HP_about.scss'
 import {Button14}  from '../../button/Button.js';
 
 export default function About(){
     return(
-        <section className="about">
+        <section className="hp_about">
                 <div className="wrapper_about">
                     <div className="about_cratex">
                         <p className='about_cratex-wwa'>WHO WE ARE</p>
@@ -16,7 +16,7 @@ export default function About(){
                             <li>Tincidunt sagittis neque sem ac eget.</li>
                             <li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
                         </ul>
-                        <div className='about_btn'><Button14 width = {136}>More about us</Button14> </div>
+                        <div className='about_btn'><Button14 width = {161}>More about us</Button14> </div>
                     </div>
                 </div>
             </section>

@@ -1,6 +1,6 @@
 import './Homepage.scss';
 import Main from './main/Main.js'
-import About from './about/About.js';
+import HP_about from './about/HP_about.js';
 import Courses from './courses/Courses.js';
 import Benefits from './benefits/Benefits.js';
 import Events from './events/Events'
@@ -18,7 +18,7 @@ let Homepage = () => {
     return (
         <>
             <Main/>
-            <About/>
+            <HP_about/>
             <Courses/>
             <Benefits/>
             <Events/>
@@ -26,7 +26,6 @@ let Homepage = () => {
             <Team/>
             <Blog/>
             <Subscribe/>
-     
         </>
     )
 }

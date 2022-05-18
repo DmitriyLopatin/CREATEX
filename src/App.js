@@ -5,6 +5,8 @@ import CourseDetails from './courseDetails/CourseDetails.js'
 import Header from './header/Header.js'
 import Footer from './footer/Footer.js'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import About from './about/About'
+
 function App() {
   return (
     <>
@@ -13,6 +15,7 @@ function App() {
         <Header />
             <Routes>
               <Route path="/" element={<Homepage />}></Route>
+              <Route path="/about" element={<About />}></Route>
               <Route path="/courses" element={<CoursesMain />}></Route>
               <Route path="/courses/:courseID" element={<CourseDetails />}></Route>
             </Routes>

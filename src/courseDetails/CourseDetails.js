@@ -16,7 +16,7 @@ let steps = [
 
 let data = [12, 12, 18, 6];
 
-let cardNum = [0, 1, 2];
+let cardNum = [0, 1, 2, 3, 4];
 
 // console.log('first render')
 
@@ -26,11 +26,12 @@ export default function CourseDetails() {
     let [hour, setHour] = useState(data[2])
     let [day, setDay] = useState(data[3])
     let [desc, setDesc] = useState()
+    let [courseShift, setCourseShift] = useState(0)
 
     let newArr = useLocation().state
 
     useEffect(() => {
-        // window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
         setInterval(() => {
             sec--
             if (sec < 0) {
@@ -205,12 +206,16 @@ export default function CourseDetails() {
                 <div className='courseDetails__courseCarousel-nav'>
                     <p className='courseDetails-heading'>You may also like</p>
                     <div className='courseDetails__teamArrows'>
-                        <span >{String.fromCharCode(8592)}</span>
-                        <span >{String.fromCharCode(8594)}</span>
+                        <span onClick={()=>setCourseShift(courseShift < 0 ? courseShift += 630 : 0)}>{String.fromCharCode(8592)}</span>
+                        <span onClick={()=>setCourseShift(Math.abs(courseShift) < 630 * (cardNum.length - 1) ? courseShift -= 630 : 0)}>{String.fromCharCode(8594)}</span>
                     </div>
                 </div>
-                <div className='courseDetails__courseCarousel-content'>
-                    {cardNum.map((item, index) => <TeamCardHorizontal num={index} />)}
+                <div className='courseDetails__courseCarousel-content' onClick={()=>window.scrollTo(0,0)}>
+                    {cardNum.map((item, index) => <TeamCardHorizontal  num={index} courseShift={courseShift}/>)}
+                </div>
+                <div className='courseDetails__courseCarousel-finish'>
+                    <p >Do you want more courses? </p>
+                    <Button width={203} link={"/courses"}>View all courses</Button>
                 </div>
             </section>
         </div>

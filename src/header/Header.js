@@ -25,7 +25,7 @@ export default function Header() {
                 <div className='left'>
                     <Link to="/#"><img src={logo} alt="createX" /></Link>
                     <ul className='nav_links'>
-                        <li><a href="#">About Us</a></li>
+                        <li><Link to='/about'>About Us</Link></li>
                         <li><Link to="/courses">Courses</Link></li>
                         <li><a href="#">Events</a></li>
                         <li><a href="#">Blog</a></li>
@@ -33,7 +33,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className='right'>
-                    <Button >Get consultation</Button>
+                    <Button width = {206}>Get consultation</Button>
                     <div className='login'>
                         <a href="#">Log in /</a>
                         <a href="#"> Register</a>

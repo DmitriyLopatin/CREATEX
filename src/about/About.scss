@@ -1,0 +1,89 @@
+.about {
+    &__main {
+        margin: 0 auto;
+        max-width: 1230px;
+        padding-top: 152px;
+        background: url(./about&images/about_illustration1.svg) top 192px right no-repeat;
+
+        &-section {
+            max-width: 600px;
+        }
+
+        &-title {
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &-text {
+            margin-top: 24px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+
+        &-buttons {
+            margin-top: 62px;
+            max-width: 416px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__watch {
+        max-width: 1230px;
+        margin: 180px auto;
+        &-video {
+            font-size: 14px;
+            line-height: 10px;
+            color: #1e212c;
+            display: flex;
+            align-items: center;
+            &::before {
+                content: url(./about&images/about_play.svg);
+                margin-right: 16px;
+            }
+        }
+        &-content {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-statistics {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 305px;
+            max-width: 285px;
+            p{
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+            }
+            span{
+                font-size: 48px;
+                font-weight: 900;
+                color: #ff3f3a;
+                margin-right: 16px;
+            }
+        }
+    }
+    &__values{
+        max-width: 1230px;
+        margin: 0 auto;
+        &-notification, &-heading{
+            text-align: center;
+        }
+        &-content{
+            display: flex;
+            justify-content: space-between;
+            p{
+                text-align: center;
+            }
+        }
+        &-details{
+            max-width: 240px;
+        }
+    }
+
+}
