@@ -10,7 +10,7 @@ import Dianne from './Dianne.svg'
 import React from 'react'
 
 
-const teamdata = [
+export const teamdata = [
     [Dianne, 'Founder and CEO', 'Dianne Russell','https://www.facebook.com/dianne.russell.7965'],
     [Jerome, 'Founder and Program Director', 'Jerome Bell','https://www.facebook.com/profile.php?id=100011012733715'],
     [Kristin, 'Marketer, Curator of Marketing Course', 'Kristin Watson','https://www.facebook.com/kristin.watson.585'],
@@ -21,7 +21,7 @@ const teamdata = [
     [Cody, 'UX Designer, Curator of Design Course', 'Cody Fisher','https://www.facebook.com/cody.fisher.14811']
 ]
 
-export default function TeamCard(props) {
+export  function TeamCard(props) {
     let social = React.createRef()
     let style = {
         background: "url(" + teamdata[props.number][0] + ")",

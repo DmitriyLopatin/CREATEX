@@ -28,7 +28,6 @@
             justify-content: space-between;
         }
     }
-
     &__watch {
         max-width: 1230px;
         margin: 180px auto;
@@ -44,7 +43,7 @@
             }
         }
         &-content {
-            margin-top: 32px;
+            margin-top: 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -70,20 +69,164 @@
     }
     &__values{
         max-width: 1230px;
-        margin: 0 auto;
-        &-notification, &-heading{
-            text-align: center;
-        }
+        margin: 180px auto;
         &-content{
             display: flex;
             justify-content: space-between;
-            p{
-                text-align: center;
-            }
         }
         &-details{
             max-width: 240px;
+            text-align: center;
+            height: 162px;
+        }
+        &-header{
+            margin-top: 23px;
+            color: #1e212c;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-text{
+            margin-top: 6px;
+            color: #787a80;
+            font-weight: 400;
+            line-height: 25.6px;
+            letter-spacing: 0.05px;
+        }
+        &-border{
+            max-width: 285px;
+            padding-right: 45px;
+            border-right: 1px solid;
+            border-image: 
+            linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(218,219,221,1), rgba(0, 0, 0, 0)) 1 100%,
+           
+        }
+           
+    }
+    &__directions{
+        max-width: 1230px;
+        margin: 180px auto;
+        &-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-column-gap: 2.4%;
+            row-gap: 3.5%;
+        }
+        &-mainBlock{
+            max-width: 342px;
+            height: 167px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        &-box, &-box1{
+            max-width: 390px;
+            height: 420px;
+            border: 1px solid #e5e8ed;
+            border-radius: 4px;
+            &:hover{
+                box-shadow: 0px 5px 60px -20px gray;
+            }
+        }
+
+        &-box1{
+            background: #F4F5F6;
+            display: flex;
+            justify-content: center;
+            &-text{
+                margin-top: 165px;
+                text-align: center;
+                max-width: 242px;
+                color: #424551;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+        }
+        &-area{
+            font-weight: 400;
+            border-radius: 4px;
+            line-height: 20px;
+            padding: 3px 8px 4px 8px;
+            color: white;
+            letter-spacing: 0.3px;
+        }
+        &-text{
+            color: #787a80;
+            font-weight: 400;
+            line-height: 25.6px;
+        }
+        &-link:hover{
+            color: #ff3f3a;
+            cursor: pointer;
+        }
+        &-link::after{
+            content: url(../blogCard/Line_Stroke.svg);
+            position: relative;
+            left: 12px;
+            top: 2px;
         }
     }
-
+    &__studyingProcess{
+        max-width: 1230px;
+        margin: 212px auto 180px auto;
+        height: 688px;
+        background: url(./about&images/about_studyingProcess.svg) bottom 0px right no-repeat;
+        &-box{
+            max-width: 490px;
+            margin-top: -3px;
+        }
+        li::before{
+            content: '\2022';
+            color: #ff3f3a;
+            margin-right: 38px;
+            margin-left: -1px;
+            font-size: 19px;
+            line-height: 10px;
+        }
+        &-step{
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 900;
+            color: #787a80;
+        }
+        &-stepContent{
+            border-left: 1px solid #9a9ca5;
+            margin-left: 4px;
+            padding-left: 44px;
+            height: 124px;
+        }
+        &-stepTitle{
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 2px;
+            color: #1e212c;
+        }
+        &-stepText{
+            font-weight: 400;
+            line-height: 25.9px;
+            color: #787a80;
+            margin-top: 9px;
+        }
+    }
+    &__team{
+        margin: 180px auto;
+        max-width: 1230px;
+        &-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-row-gap: 7%;
+            grid-column-gap: 2.4%;
+        }
+    }
+    &__mix{
+        background: url(./about&images/about_background.svg) no-repeat top center;
+        height: 1256px;
+        padding-top: 20px;
+        margin-bottom: -20px;
+        &-studentsWork{
+            margin-top: 80px;
+        }
+    }
 }

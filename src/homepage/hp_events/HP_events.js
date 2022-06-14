@@ -1,5 +1,5 @@
 import CardEvent from './Card_Event.js'
-import './Events.scss'
+import './HP_events.scss'
 import {Button}  from '../../button/Button';
 
 const eventsData = [
@@ -36,7 +36,7 @@ export default function Events(){
                 </div>
                 <div className='events_footer'>
                     <h3>Do you want more?</h3>
-                    <Button>Explore all events</Button>
+                    <Button width={215}>Explore all events</Button>
                 </div>
             </div>
         </section>

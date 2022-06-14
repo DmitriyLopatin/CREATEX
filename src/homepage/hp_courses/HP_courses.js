@@ -1,4 +1,4 @@
-import './Courses.scss'
+import './HP_courses.scss'
 import { Button } from '../../button/Button.js'
 import { TeamCardHorizontal } from '../../teamInfo/TeamInfo'
 import {useState} from 'react'

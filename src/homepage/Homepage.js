@@ -1,9 +1,9 @@
 import './Homepage.scss';
 import Main from './main/Main.js'
-import HP_about from './about/HP_about.js';
-import Courses from './courses/Courses.js';
+import HP_about from './hp_about/HP_about.js';
+import Courses from './hp_courses/HP_courses.js';
 import Benefits from './benefits/Benefits.js';
-import Events from './events/Events'
+import HP_events from './hp_events/HP_events'
 import Subscribe from '../subscribe/Subscribe.js'
 import  Certificate from './certificate/Certificate'
 import  Team from './team/Team.js'
@@ -21,7 +21,7 @@ let Homepage = () => {
             <HP_about/>
             <Courses/>
             <Benefits/>
-            <Events/>
+            <HP_events/>
             <Certificate/>
             <Team/>
             <Blog/>

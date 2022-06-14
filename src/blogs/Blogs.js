@@ -7,7 +7,7 @@ let blogsNum = [0,1,2]
 export default function Blog(){
     return(
         <section className="blogs">
-            <p className='blogs_heading'>OUR BLOG</p>
+            <p className='notification'>OUR BLOG</p>
             <div className='blogs_notification'>
                 <p>Latest posts</p>
                 <Button width={158}>Go to blog</Button>

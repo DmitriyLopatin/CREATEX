@@ -31,8 +31,8 @@ export default function Testimonials() {
     return (
         <section className='testimonials'>
             <div className='testimonials_wrapper'>
-                <p className='testimonials_heading'>TESTIMONIALS</p>
-                <p className='testimonials_notification'>What our students say</p>
+                <p className='notificationCenter'>TESTIMONIALS</p>
+                <p className='headingCenter60'>What our students say</p>
                 <div className='testimonials_content'>
                     <span onClick={previousLeft}>{String.fromCharCode(8592)}</span>
                     <div className='testimonials_main'>

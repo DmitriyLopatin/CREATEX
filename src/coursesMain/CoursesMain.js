@@ -40,8 +40,8 @@ export default function CoursesMain() {
     return (
         <>
             <section className='coursesMain'>
-                <p className='notification'>ENJOY YOUR STUDYING!</p>
-                <p className='heading'> Our online courses</p>
+                <p className='notificationCenter'>ENJOY YOUR STUDYING!</p>
+                <p className='headingCenter60'> Our online courses</p>
                 <div className='coursesMain_menu'>
                     <div className='coursesMain_menu-searchItem'>
                         {filtered.map((item,index)=><p className={redClass === index ? 'coursesMain_Red' : 'inactiv'} onClick={()=> {setRedClass(index); setArrNew(item); setNumberCourse(item); courseLoader.current.style.display = 'none'}

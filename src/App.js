@@ -18,6 +18,7 @@ function App() {
               <Route path="/about" element={<About />}></Route>
               <Route path="/courses" element={<CoursesMain />}></Route>
               <Route path="/courses/:courseID" element={<CourseDetails />}></Route>
+              <Route path="/events/:eventsID" element={<CourseDetails />}></Route>
             </Routes>
         <Footer />
      </Router>

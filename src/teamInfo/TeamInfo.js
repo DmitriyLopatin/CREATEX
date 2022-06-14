@@ -11,6 +11,7 @@ import classessV from './TeamCardVertical.module.css'
 import classessH from './TeamCardHorizontal.module.css'
 import { Link } from 'react-router-dom'
 
+
 export let teamMemberData = [
     {
         photo: Bell,
@@ -873,6 +874,8 @@ export let courseData = [
 
 ]
 
+
+
 export const TeamCardVertical = (props) => {
     let style = {
         backgroundColor: props.arr[props.num].courseColor
@@ -902,7 +905,7 @@ export const TeamCardHorizontal = (props) => {
         <Link to={{
             pathname: `/courses/${courseData[props.num].courseName}`,
         }} state={courseData[props.num]}>
-            <div className={classessH.main}  style={{transform: `translateX(${props.courseShift}px)`}}>
+            <div className={classessH.main} style={{ transform: `translateX(${props.courseShift}px)` }}>
                 <div className={classessH.photo}>
                     <img className={classessH.photoCut} src={courseData[props.num].courseAuthorInfa.photo} />
                 </div>
