@@ -10,6 +10,8 @@ import Watson from './teamInfo_imges/Watson.svg'
 import classessV from './TeamCardVertical.module.css'
 import classessH from './TeamCardHorizontal.module.css'
 import { Link } from 'react-router-dom'
+import { Button14 } from '../button/Button'
+import evenHorizontal from './EventCardHorizontal.module.css'
 
 
 export let teamMemberData = [
@@ -874,7 +876,602 @@ export let courseData = [
 
 ]
 
-
+export let eventData = [
+    {
+        day: '05',
+        month: 'August',
+        time: '11:00 - 14:00',
+        topic: 'Formation of the organizational structure of the company in the face of uncertainty.',
+        eventType: 'Online master-class',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[0]
+    },
+    {
+        day: '24',
+        month: 'July',
+        time: '11:00 - 12:30',
+        topic: 'Building a customer service department. Best Practices.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[1]
+    },
+    {
+        day: '16',
+        month: 'July',
+        time: '9:00 - 14:00',
+        topic: 'How to apply methods of speculative design in practice. Worldbuilding prototyping.',
+        eventType: 'Online workshop',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[2]
+    },
+    {
+        day: '10',
+        month: 'July',
+        time: '9:00 - 14:00',
+        topic: 'Find and evaluate: search and assessment tools for candidates.',
+        eventType: 'Online workshop',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[3]
+    },
+    {
+        day: '27',
+        month: 'June',
+        time: '15:00 - 19:00',
+        topic: 'Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.',
+        eventType: 'Online master-class',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[4]
+    },
+    {
+        day: '15',
+        month: 'June',
+        time: '10:00 - 12:00',
+        topic: 'Marketing or growth hacking: main differences and what business needs.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[5]
+    },
+    {
+        day: '02',
+        month: 'June',
+        time: '11:00 - 13:00',
+        topic: 'How to brief a client and present your design to approve it from the first show.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[6]
+    },
+    {
+        day: '29',
+        month: 'May',
+        time: '11:00 - 12:00',
+        topic: 'Who is a project manager and do I want to be PM?',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[6]
+    },
+    {
+        day: '18',
+        month: 'May',
+        time: '10:00 - 12:00',
+        topic: 'The company\'s business page as an additional tool to support the announcement of vacancies.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[8]
+    },
+    {
+        day: '10',
+        month: 'May',
+        time: '11:00 - 14:00',
+        topic: 'Formation of the organizational structure of the company in the face of uncertainty.',
+        eventType: 'Online master-class',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[0]
+    },
+    {
+        day: '06',
+        month: 'May',
+        time: '10:00 - 13:30',
+        topic: 'Building a customer service department. Best Practices.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[1]
+    },
+    {
+        day: '01',
+        month: 'May',
+        time: '11:40 - 14:00',
+        topic: 'How to apply methods of speculative design in practice. Worldbuilding prototyping.',
+        eventType: 'Online workshop',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[2]
+    },
+    {
+        day: '29',
+        month: 'April',
+        time: '19:00 - 21:00',
+        topic: 'Find and evaluate: search and assessment tools for candidates.',
+        eventType: 'Online workshop',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[3]
+    },
+    {
+        day: '25',
+        month: 'April',
+        time: '15:00 - 19:00',
+        topic: 'Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.',
+        eventType: 'Online master-class',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[4]
+    },
+    {
+        day: '15',
+        month: 'April',
+        time: '10:00 - 12:30',
+        topic: 'Marketing or growth hacking: main differences and what business needs.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[5]
+    },
+    {
+        day: '12',
+        month: 'April',
+        time: '11:00 - 13:00',
+        topic: 'How to brief a client and present your design to approve it from the first show.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[6]
+    },
+    {
+        day: '07',
+        month: 'April',
+        time: '11:00 - 12:00',
+        topic: 'Who is a project manager and do I want to be PM?',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[6]
+    },
+    {
+        day: '04',
+        month: 'April',
+        time: '11:00 - 12:50',
+        topic: 'The company\'s business page as an additional tool to support the announcement of vacancies.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[8]
+    },
+    {
+        day: '01',
+        month: 'April',
+        time: '11:00 - 14:00',
+        topic: 'Formation of the organizational structure of the company in the face of uncertainty.',
+        eventType: 'Online master-class',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[0]
+    },
+    {
+        day: '28',
+        month: 'March',
+        time: '10:00 - 12:30',
+        topic: 'Building a customer service department. Best Practices.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[1]
+    },
+    {
+        day: '24',
+        month: 'March',
+        time: '9:00 - 14:00',
+        topic: 'How to apply methods of speculative design in practice. Worldbuilding prototyping.',
+        eventType: 'Online workshop',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[2]
+    },
+    {
+        day: '19',
+        month: 'March',
+        time: '9:00 - 14:00',
+        topic: 'Find and evaluate: search and assessment tools for candidates.',
+        eventType: 'Online workshop',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[3]
+    },
+    {
+        day: '01',
+        month: 'March',
+        time: '15:00 - 19:00',
+        topic: 'Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.',
+        eventType: 'Online master-class',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[4]
+    },
+    {
+        day: '23',
+        month: 'February',
+        time: '10:00 - 12:00',
+        topic: 'Marketing or growth hacking: main differences and what business needs.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[5]
+    },
+    {
+        day: '02',
+        month: 'February',
+        time: '10:00 - 14:00',
+        topic: 'How to brief a client and present your design to approve it from the first show.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[6]
+    },
+    {
+        day: '20',
+        month: 'January',
+        time: '11:00 - 12:00',
+        topic: 'Who is a project manager and do I want to be PM?',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[6]
+    },
+    {
+        day: '03',
+        month: 'January',
+        time: '16:00 - 18:30',
+        topic: 'The company\'s business page as an additional tool to support the announcement of vacancies.',
+        eventType: 'Online lecture',
+        topicPoints: [
+            [
+                'Aliquet lectus urna viverra in odio.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Orci commodo, viverra orci mollis ut euismod.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'Sagittis vitae facilisi rutrum amet mauris quisque vel.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ],
+            [
+                'In id dolor quis nunc, urna hendrerit pharetra.', 'Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.'
+            ]
+        ],
+        eventSpeaker: teamMemberData[8]
+    },
+]
 
 export const TeamCardVertical = (props) => {
     let style = {
@@ -916,5 +1513,31 @@ export const TeamCardHorizontal = (props) => {
                 </div>
             </div>
         </Link>
+    )
+}
+
+export const EventCardVertical = (props) => {
+
+}
+export const EventCardHorizontal = (props) => {
+    return (
+        <Link  className={evenHorizontal.box} to={{
+            pathname: `/events/${eventData[props.num].topic}`,
+        }} state={eventData[props.num]}>
+            <div className={evenHorizontal.main}>
+                <div className={evenHorizontal.date}>
+                    <p className={evenHorizontal.day}>{eventData[props.num].day}</p>
+                    <div className='eventInfo_M-T'>
+                        <p className={evenHorizontal.month}>{eventData[props.num].month}</p>
+                        <p className={evenHorizontal.time}>{eventData[props.num].time}</p>
+                    </div>
+                </div>
+                <div className={evenHorizontal.header}>
+                    <p className={evenHorizontal.name}>{eventData[props.num].topic}</p>
+                    <p className={evenHorizontal.type}>{eventData[props.num].eventType}</p>
+                </div>
+                <Button14 width={136}>View more</Button14>
+            </div>
+         </Link>
     )
 }

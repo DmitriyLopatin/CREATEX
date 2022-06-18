@@ -6,6 +6,7 @@ import Subscribe from '../subscribe/Subscribe'
 import { useEffect, useState } from 'react'
 import { courseData, TeamCardVertical } from '../teamInfo/TeamInfo'
 import loader from './Convert.svg'
+import Input from '../UI/input/Input'
 
 
 let newArr = ['All','Marketing', 'Management', 'HR & Recruting', 'Design', 'Development']
@@ -48,7 +49,7 @@ export default function CoursesMain() {
                             }>{newArr[index]}<span>{item.length}</span></p>)}
                    
                     </div>
-                    <input type="text" className='coursesMain_menu-input' placeholder='Search course...' />
+                    <Input placeholder={'Search course...'} width={315}/>
                 </div>
                 <div className='coursesMain_content'>
                     {numberCourse.map((item, index) => <TeamCardVertical num={index} arr={arrNew}/>)}

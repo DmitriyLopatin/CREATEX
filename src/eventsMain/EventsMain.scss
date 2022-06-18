@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'iconevent';
+    src: url(./eventsMain_icons&fonts/fonts/icomoon.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.eventsMain {
+    padding-top: 152px;
+    max-width: 1230px;
+    margin: 0 auto;
+    &__menuIndicateItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-marginBottom{
+            margin-bottom: 36px;
+        }
+        &-cat {
+            width: 160px;
+        }
+        &-date {
+            width: 160px;
+        }
+        select {
+            height: 44px;
+            border: 1px solid #d7dadd;
+            border-radius: 4px;
+            padding-left: 16px;
+            padding-right: 47px;
+            color: #424551;
+            appearance: none;
+            background: url(./eventsMain_icons&fonts/down-chevron.svg) center right 16px no-repeat;
+        }
+        &-form {
+            height: 44px;
+            border: 1px solid #d7dadd;
+            border-radius: 4px;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #424551;
+            max-width: 72px;
+        }
+        & &-pageNum {
+            font-size: 14px;
+            color: #787a80;
+            font-weight: 400;
+            margin: 0 0 0 12px;
+        }
+        p {
+            color: #424551;
+            margin-right: 12px;
+        }
+        & &-view {
+            font-size: 19px;
+            &::before {
+                font-family: iconevent;
+                content: attr(data);
+            }
+        }
+        & &-view1{
+            margin: 0;
+        }
+    }
+    &__content{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__pageId{
+        display: flex;
+        justify-content: center;
+        // color: #424551;
+        margin: 60px auto 180px auto;
+        p{
+            margin-right: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &-rightArrow::after{
+           content: url(./eventsMain_icons&fonts/EventsMain__rightArrow.svg);
+        }
+    }
+  
+}

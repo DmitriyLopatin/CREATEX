@@ -55,7 +55,7 @@ export default function Footer() {
                     </div>
                     <div className='footer_item footer_signUp'>
                         <p>SIGN UP TO OUR NEWSLETTER</p>
-                       <input type="email" placeholder='Email address'/>
+                       <input type="email" placeholder='Email address' defaultValue='Email address'/>
                         <p className='footer_item-notice'>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
                     </div>
                 </div>

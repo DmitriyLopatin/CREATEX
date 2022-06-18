@@ -52,7 +52,7 @@ let aboutStudyingProcessSteps = [
 
 ]
 
-console.log(teamdata)
+
 
 export default function About() {
 

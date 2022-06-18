@@ -15,6 +15,6 @@ export  function Button14({children, ...props}){
         width : props.width + 'px',
     }
     return(
-        <a href='' className={classess.btn14} style={style}>{children}</a>
+        <Link to={`${props.link}`} className={classess.btn14} style={style}>{children}</Link>
     )
 }
