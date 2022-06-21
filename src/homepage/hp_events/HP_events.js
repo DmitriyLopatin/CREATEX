@@ -1,6 +1,6 @@
 import CardEvent from './Card_Event.js'
 import './HP_events.scss'
-import {Button}  from '../../button/Button';
+import {Button}  from '../../UI/button/Button';
 
 const eventsData = [
     {

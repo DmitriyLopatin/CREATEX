@@ -7,7 +7,7 @@ export  function Button({children, ...props}){
         width : props.width + 'px',
     }
     return(
-        <Link to={`${props.link}`} className={classess.btn} style={style}>{children}</Link>
+        <Link to={`${props.link}`} className={classess.btn} style={style} state={props.state}>{children}</Link>
     )
 }
 export  function Button14({children, ...props}){
@@ -15,6 +15,6 @@ export  function Button14({children, ...props}){
         width : props.width + 'px',
     }
     return(
-        <Link to={`${props.link}`} className={classess.btn14} style={style}>{children}</Link>
+        <Link to={`${props.link}`} className={classess.btn14} style={style} state={props.state}>{children}</Link>
     )
 }

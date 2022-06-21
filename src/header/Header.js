@@ -1,7 +1,7 @@
 import './Header.scss'
 import React from 'react';
 import logo from './logo.svg';
-import { Button } from '../button/Button.js';
+import { Button } from '../UI/button/Button';
 import { useState } from 'react';
 // import { useLocation } from 'react-router-dom';
 import { Link} from 'react-router-dom';

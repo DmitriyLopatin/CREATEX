@@ -1,5 +1,5 @@
 import './HP_about.scss'
-import {Button14}  from '../../button/Button.js';
+import {Button14}  from '../../UI/button/Button';
 
 export default function About(){
     return(

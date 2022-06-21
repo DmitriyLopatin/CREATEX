@@ -1,5 +1,5 @@
 import './Subscribe.scss'
-import {Button}  from '../button/Button.js';
+import {Button}  from '../UI/button/Button';
 
 
 export default function Subscribe() {

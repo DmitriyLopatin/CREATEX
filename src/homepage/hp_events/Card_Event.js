@@ -1,5 +1,5 @@
 import './Card_Event.scss'
-import {Button14}  from '../../button/Button';
+import {Button14}  from '../../UI/button/Button';
 export default function CardEvent(props){
     return(
         <div className='eventInfo'>

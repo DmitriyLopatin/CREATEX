@@ -58,15 +58,25 @@
                 font-family: iconevent;
                 content: attr(data);
             }
+            &:hover{
+                cursor: pointer;
+            }
         }
         & &-view1{
             margin: 0;
         }
     }
-    &__content{ 
+    &__content-list{ 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    &__content-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2.5%;
+        grid-row-gap: 30px;
+        margin-top: 60px;
     }
     &__pageId{
         display: flex;

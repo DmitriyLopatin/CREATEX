@@ -1,7 +1,7 @@
 import './Main.scss'
 import main_redPoint from './main_redPoint.svg'
 import showreel from './main_hover.svg'
-import {Button}  from '../../button/Button';
+import {Button}  from '../../UI/button/Button';
 
 export default function Main(){
     return(

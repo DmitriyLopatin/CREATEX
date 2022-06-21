@@ -1,7 +1,7 @@
 import { useParams, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './CourseDetails.scss'
-import { Button, Button14 } from '../button/Button';
+import { Button, Button14 } from '../UI/button/Button';
 import { soc } from '../footer/Footer'
 import React from 'react'
 import Testimonials from '../tertimonials/Testimonials'
@@ -54,7 +54,6 @@ export default function CourseDetails() {
 
     return (
         <div className="courseDetails">
-
             <section className="courseDetails_header">
                 <p className='courseDetails_header-title'>COURSE</p>
                 <h1 className='courseDetails_header-heading'>{newArr.courseName}</h1>
@@ -169,8 +168,20 @@ export default function CourseDetails() {
                     <p className='courseDetails-notification'> COURSE PROGRAM</p>
                     <p className='courseDetails-heading'>What will you learn</p>
                     <div className='courseDetails_program-main'>
-                        {newArr.courseLessons.map((item, index) => <><p className='courseDetails_program-lesson'><span onClick={() => setDesc(desc === index ? '' : index)}> <span className='courseDetails_program-pointer'>{desc === index ? `\u2014` : `\u002b`}</span>Lesson {index + 1}.</span> {item[0]}</p>
-                            <p className={desc === index ? 'courseDetails_program-active' : 'courseDetails_program-nonactive'}>{newArr.courseLessons[0][1]}</p></>
+                        {newArr.courseLessons.map((item, index) =>
+                            <>
+                                <p className='courseDetails_program-lesson'>
+                                    <span onClick={() => setDesc(desc === index ? '' : index)}>
+                                        <span className='courseDetails_program-pointer'>
+                                            {desc === index ? `\u2014` : `\u002b`}
+                                        </span>
+                                        Lesson {index + 1}.
+                                    </span> {item[0]}
+                                </p>
+                                <p className={desc === index ? 'courseDetails_program-active' : 'courseDetails_program-nonactive'}>
+                                    {newArr.courseLessons[0][1]}
+                                </p>
+                            </>
                         )}
                     </div>
                 </div>
@@ -206,12 +217,12 @@ export default function CourseDetails() {
                 <div className='courseDetails__courseCarousel-nav'>
                     <p className='courseDetails-heading'>You may also like</p>
                     <div className='courseDetails__teamArrows'>
-                        <span onClick={()=>setCourseShift(courseShift < 0 ? courseShift += 630 : 0)}>{String.fromCharCode(8592)}</span>
-                        <span onClick={()=>setCourseShift(Math.abs(courseShift) < 630 * (cardNum.length - 1) ? courseShift -= 630 : 0)}>{String.fromCharCode(8594)}</span>
+                        <span onClick={() => setCourseShift(courseShift < 0 ? courseShift += 630 : 0)}>{String.fromCharCode(8592)}</span>
+                        <span onClick={() => setCourseShift(Math.abs(courseShift) < 630 * (cardNum.length - 1) ? courseShift -= 630 : 0)}>{String.fromCharCode(8594)}</span>
                     </div>
                 </div>
-                <div className='courseDetails__courseCarousel-content' onClick={()=>window.scrollTo(0,0)}>
-                    {cardNum.map((item, index) => <TeamCardHorizontal  num={index} courseShift={courseShift}/>)}
+                <div className='courseDetails__courseCarousel-content' onClick={() => window.scrollTo(0, 0)}>
+                    {cardNum.map((item, index) => <TeamCardHorizontal num={index} courseShift={courseShift} />)}
                 </div>
                 <div className='courseDetails__courseCarousel-finish'>
                     <p >Do you want more courses? </p>

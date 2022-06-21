@@ -10,8 +10,9 @@ import Watson from './teamInfo_imges/Watson.svg'
 import classessV from './TeamCardVertical.module.css'
 import classessH from './TeamCardHorizontal.module.css'
 import { Link } from 'react-router-dom'
-import { Button14 } from '../button/Button'
+import { Button14 } from '../UI/button/Button'
 import evenHorizontal from './EventCardHorizontal.module.css'
+import eventCardVertical from './EventCardVertical.module.css'
 
 
 export let teamMemberData = [
@@ -1517,27 +1518,31 @@ export const TeamCardHorizontal = (props) => {
 }
 
 export const EventCardVertical = (props) => {
-
+    return (
+            <div className={eventCardVertical.main}>
+                <p className={eventCardVertical.date}>{props.data[props.num].day} {props.data[props.num].month}</p>
+                <p className={eventCardVertical.time}>{props.data[props.num].time}</p>
+                <p className={eventCardVertical.name}>{props.data[props.num].topic}</p>
+                <p className={eventCardVertical.type}>{props.data[props.num].eventType}</p>
+                <Button14 width={342} link={`/events/${props.data[props.num].topic}`} state={props.data[props.num]}>View more</Button14>
+            </div>
+    )
 }
 export const EventCardHorizontal = (props) => {
     return (
-        <Link  className={evenHorizontal.box} to={{
-            pathname: `/events/${eventData[props.num].topic}`,
-        }} state={eventData[props.num]}>
             <div className={evenHorizontal.main}>
                 <div className={evenHorizontal.date}>
-                    <p className={evenHorizontal.day}>{eventData[props.num].day}</p>
+                    <p className={evenHorizontal.day}>{props.data[props.num].day}</p>
                     <div className='eventInfo_M-T'>
-                        <p className={evenHorizontal.month}>{eventData[props.num].month}</p>
-                        <p className={evenHorizontal.time}>{eventData[props.num].time}</p>
+                        <p className={evenHorizontal.month}>{props.data[props.num].month}</p>
+                        <p className={evenHorizontal.time}>{props.data[props.num].time}</p>
                     </div>
                 </div>
                 <div className={evenHorizontal.header}>
-                    <p className={evenHorizontal.name}>{eventData[props.num].topic}</p>
-                    <p className={evenHorizontal.type}>{eventData[props.num].eventType}</p>
+                    <p className={evenHorizontal.name}>{props.data[props.num].topic}</p>
+                    <p className={evenHorizontal.type}>{props.data[props.num].eventType}</p>
                 </div>
-                <Button14 width={136}>View more</Button14>
+                <Button14 width={136} link={`/events/${props.data[props.num].topic}`} state={props.data[props.num]}>View more</Button14>
             </div>
-         </Link>
     )
 }

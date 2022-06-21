@@ -1,5 +1,5 @@
 import './Blogs.scss'
-import {Button} from '../button/Button.js'
+import {Button} from '../UI/button/Button'
 import BlogCard from '../blogCard/BlogCard.js'
 
 let blogsNum = [0,1,2]
