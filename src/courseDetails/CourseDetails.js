@@ -16,7 +16,7 @@ let steps = [
 
 let data = [12, 12, 18, 6];
 
-let cardNum = [0, 1, 2, 3, 4];
+export let cardNum = [0, 1, 2, 3, 4];
 
 // console.log('first render')
 
@@ -151,8 +151,8 @@ export default function CourseDetails() {
             </section>
             <section className='courseDetails_benefits'>
                 <div className='courseDetails_benefits-title'>
-                    <p className=' courseDetails-notification'>FOR WHOM?</p>
-                    <p className='courseDetails-heading'>Who will benefit from the course:</p>
+                    <p className='notification'>FOR WHOM?</p>
+                    <p className='heading60'>Who will benefit from the course:</p>
                 </div>
                 <div className='courseDetails_benefits-points'>
                     <ul >

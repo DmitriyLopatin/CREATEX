@@ -1,4 +1,5 @@
 .main{
+    transition: 0.5s;
     max-width: 390px;
     height: 323px;
     border: 1px solid #e5e8ed;
@@ -7,6 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
+    margin-right: 30px;
 }
 .date{
    color: #FF3F3A;

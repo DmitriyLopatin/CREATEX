@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom'
 import { Button14 } from '../UI/button/Button'
 import evenHorizontal from './EventCardHorizontal.module.css'
 import eventCardVertical from './EventCardVertical.module.css'
+import { useEffect } from 'react'
 
 
 export let teamMemberData = [
@@ -1519,7 +1520,7 @@ export const TeamCardHorizontal = (props) => {
 
 export const EventCardVertical = (props) => {
     return (
-            <div className={eventCardVertical.main}>
+            <div className={eventCardVertical.main} style={{ transform: `translateX(${props.eventShift}px)` }}>
                 <p className={eventCardVertical.date}>{props.data[props.num].day} {props.data[props.num].month}</p>
                 <p className={eventCardVertical.time}>{props.data[props.num].time}</p>
                 <p className={eventCardVertical.name}>{props.data[props.num].topic}</p>
@@ -1528,6 +1529,7 @@ export const EventCardVertical = (props) => {
             </div>
     )
 }
+
 export const EventCardHorizontal = (props) => {
     return (
             <div className={evenHorizontal.main}>
@@ -1545,4 +1547,18 @@ export const EventCardHorizontal = (props) => {
                 <Button14 width={136} link={`/events/${props.data[props.num].topic}`} state={props.data[props.num]}>View more</Button14>
             </div>
     )
+}
+
+export const PageNotFound = () =>{
+    let PNFstyle = {
+        maxWidth: '1230px',
+        margin : '180px auto 120px auto',
+        color: '#1e212c',
+        textAlign: 'center',
+        letterSpacing: '2px'
+    }
+    useEffect(()=>{
+       window.scrollTo(0,0) 
+    },[])
+    return <h1 style={PNFstyle}>404. Page HAS NOT BEEN DESIGNED at this time :(</h1>
 }
