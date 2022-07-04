@@ -1,13 +1,32 @@
 .createx__menu-input{
     background: url(./InputSearch-bg.svg) center right 16px no-repeat;
-    height: 44px;
-    border-radius: 4px;
-    border: 1px solid #d7dadd;
-    color: #9a9ca5;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 400;
-    padding-left: 16px;
     padding-right: 40px;
+}
+.createx__form-input{
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.createx__inputCommon{
+    background-color: white;
+    padding-left: 16px;
     font-family: Lato;
+    color: #9a9ca5;
+    border-radius: 4px;
+    border: 1px solid #d7dadd;
+    font-weight: 400;
+}
+.createx__form-text{
+    color: #424551;
+    font-weight: 400;
+    line-height: 25.5px;
+    margin-bottom: 8px;
+}
+.createx__form{
+    display: inline-block;
+}
+textarea{
+    padding-top: 16px;
+    
 }

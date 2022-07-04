@@ -1,6 +1,6 @@
 import './EventsMain.scss'
 import Subscribe from '../subscribe/Subscribe'
-import Input from '../UI/input/Input'
+import {Input} from '../UI/input/Input'
 import { EventCardHorizontal, EventCardVertical, eventData } from '../teamInfo/TeamInfo'
 import { useEffect, useState } from 'react'
 

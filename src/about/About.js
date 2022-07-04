@@ -1,6 +1,6 @@
 import './About.scss'
 import Testimonials from '../tertimonials/Testimonials'
-import Blog from '../blogs/Blogs'
+import HP_blogs from '../homepage/hp_blogs/HP_blogs'
 import Subscribe from '../subscribe/Subscribe'
 import { Button } from '../UI/button/Button'
 import VideoFrame from './about&images/about_video-image.svg'
@@ -159,7 +159,7 @@ export default function About() {
                     <p className='headingCenter60'>Our students work here</p>
                 </div>
             </article>
-            <Blog></Blog>
+            <HP_blogs></HP_blogs>
             <Subscribe></Subscribe>
         </section>
     )

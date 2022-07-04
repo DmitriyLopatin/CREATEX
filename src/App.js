@@ -9,6 +9,7 @@ import Footer from './footer/Footer.js'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import About from './about/About'
 import { PageNotFound } from './teamInfo/TeamInfo';
+import Contacts from './contacts/Contacts.js';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/courses/:courseID" element={<CourseDetails />}></Route>
               <Route path="/events" element={<EventsMain />}></Route>
               <Route path="/events/:eventID" element={<EventDetails />}></Route>
+              <Route path="/contacts" element={<Contacts />}></Route>
               <Route path="*" element={<PageNotFound />}></Route>
             </Routes>
         <Footer />

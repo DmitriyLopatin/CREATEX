@@ -1,4 +1,4 @@
-import './Team.scss'
+import './HP_team.scss'
 import {TeamCard} from '../../teamCard/Team-Card.js'
 import { useState } from 'react'
 import Testimonials from '../../tertimonials/Testimonials'

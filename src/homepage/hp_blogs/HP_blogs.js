@@ -1,6 +1,6 @@
-import './Blogs.scss'
-import {Button} from '../UI/button/Button'
-import BlogCard from '../blogCard/BlogCard.js'
+import './HP_blogs.scss'
+import {Button} from '../../UI/button/Button'
+import BlogCard from '../../blogCard/BlogCard.js'
 
 let blogsNum = [0,1,2]
 

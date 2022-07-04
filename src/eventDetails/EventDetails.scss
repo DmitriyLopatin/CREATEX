@@ -187,7 +187,7 @@
             }
 
             &:hover {
-                content: url(../homepage/certificate/certificate_DMS.svg);
+                content: url(../homepage/hp_certificate/certificate_DMS.svg);
                 margin-top: -3px;
             }
         }
@@ -198,7 +198,7 @@
             }
 
             &:hover {
-                content: url(../homepage/certificate/certificate_NAT.svg);
+                content: url(../homepage/hp_certificate/certificate_NAT.svg);
                 margin-top: -3px;
             }
         }
@@ -209,7 +209,7 @@
             }
 
             &:hover {
-                content: url(../homepage/certificate/certificate_SC.svg);
+                content: url(../homepage/hp_certificate/certificate_SC.svg);
                 margin-top: -3px;
             }
         }
@@ -267,34 +267,6 @@
             display: flex;
             justify-content: space-between;
             margin: 48px 0 28px 0;
-        }
-
-        &-checkboxFalse {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-        }
-
-        &-checkboxFalse:checked+&-checkboxTrue {
-            background-image: url(./eventDetails_icons&fonts/checked.jpg);
-            border: none;
-        }
-
-        &-checkboxTrue {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border: 1px solid #FF3F3A;
-            border-radius: 3px;
-            margin-right: 12px;
-        }
-
-        label {
-            display: flex;
-            align-items: center;
-            color: #424551;
-            font-weight: 400;
-
         }
     }
 

@@ -60,3 +60,35 @@ body{
   color: #1E212C;
   line-height: 24px;
 }
+.checkboxFalse {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checkboxFalse:checked + .checkboxTrue {
+  background-image: url(./eventDetails/eventDetails_icons&fonts/checked.jpg);
+  border: none;
+}
+
+.checkboxTrue {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FF3F3A;
+  border-radius: 3px;
+  margin-right: 12px;
+  &__contacts{
+    position: relative;
+    bottom: 12px;
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+  color: #424551;
+  font-weight: 400;
+  line-height: 25.6px;
+
+}

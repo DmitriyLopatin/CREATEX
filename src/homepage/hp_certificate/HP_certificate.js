@@ -1,4 +1,4 @@
-import classess from './Certificate.module.css'
+import classess from './HP_certificate.module.css'
 import DMS from './certificate_DMS.svg'
 import NAT from './certificate_NAT.svg'
 import SC from './certificate_SC.svg'

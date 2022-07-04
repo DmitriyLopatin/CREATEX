@@ -1,12 +1,12 @@
 import './CoursesMain.scss'
 import React  from 'react'
 import Testimonials from '../tertimonials/Testimonials'
-import Certificate from '../homepage/certificate/Certificate'
+import HP_certificate from '../homepage/hp_certificate/HP_certificate'
 import Subscribe from '../subscribe/Subscribe'
 import { useEffect, useState } from 'react'
 import { courseData, TeamCardVertical } from '../teamInfo/TeamInfo'
 import loader from './Convert.svg'
-import Input from '../UI/input/Input'
+import {Input} from '../UI/input/Input'
 
 
 let newArr = ['All','Marketing', 'Management', 'HR & Recruting', 'Design', 'Development']
@@ -60,7 +60,7 @@ export default function CoursesMain() {
                 </div>
             </section>
             <Testimonials></Testimonials>
-            <Certificate></Certificate>
+            <HP_certificate></HP_certificate>
             <Subscribe></Subscribe>
         </>
     )

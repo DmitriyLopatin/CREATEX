@@ -29,7 +29,7 @@ export default function Header() {
                         <li><Link to="/courses">Courses</Link></li>
                         <li><Link to="/events">Events</Link></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><Link to="/contacts">Contacts</Link></li>
                     </ul>
                 </div>
                 <div className='right'>

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 import "../eventDetails/EventDetails.scss"
 import { Button14, Button } from "../UI/button/Button"
 import { soc } from '../footer/Footer'
-import Input from "../UI/input/Input"
+import {Input2} from "../UI/input/Input"
 import { cardNum } from "../courseDetails/CourseDetails"
 import { EventCardVertical, eventData } from "../teamInfo/TeamInfo"
 
@@ -101,12 +101,12 @@ export default function EventDetails() {
                 <div className="eventDetails__subscribe-content">
                     <p className="eventDetails__subscribe-heading">Don’t want to miss the best events? Subscribe to our newsletter!</p>
                     <div className="eventDetails__subscribe-interface">
-                        <Input placeholder={'Your working email'} width={422} height={52}></Input>
+                        <Input2 placeholder={'Your working email'} typeInput={'input'} width={422} height={52}></Input2>
                         <Button width={154}>Subscribe</Button>
                     </div>
-                    <label >
-                        <input className="eventDetails__subscribe-checkboxFalse" type="checkbox" />
-                        <span className="eventDetails__subscribe-checkboxTrue"></span>
+                    <label className="agreementCheck">
+                        <input className="checkboxFalse" type="checkbox" />
+                        <span className="checkboxTrue"></span>
                         I agree to receive communications from Createx Online School
                     </label>
 

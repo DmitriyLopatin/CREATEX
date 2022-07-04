@@ -1,4 +1,4 @@
-import './Benefits.scss'
+import './HP_benefits.scss'
 const arr = [
     ["\ue900", 'Experienced Tutors'],
     ["\ue901", 'Feedback & Support'],

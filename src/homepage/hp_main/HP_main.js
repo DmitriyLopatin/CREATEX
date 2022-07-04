@@ -1,4 +1,4 @@
-import './Main.scss'
+import './HP_main.scss'
 import main_redPoint from './main_redPoint.svg'
 import showreel from './main_hover.svg'
 import {Button}  from '../../UI/button/Button';

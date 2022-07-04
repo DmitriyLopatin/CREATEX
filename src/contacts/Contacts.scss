@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'iconsoc';
+    src: url(../footer/fonts/iconsoc.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+.contacts{
+    padding-top: 152px;
+    max-width: 1230px;
+    margin: 0 auto;
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        height: 444px;
+         &-mainData{
+            margin-bottom: 24px;
+            max-width: 400px; 
+         }
+         &-title{
+            color: #787a80;
+            font-size: 14px;
+            margin: -8px 0 0px 12px;
+         }
+         &-email::before{
+            content: url(./contacts_icons/Chat.svg);
+            position: relative;
+            top: 8px;
+            left: -11px;
+         }
+         &-phone::before{
+            content: url(./contacts_icons/iPhone.svg);
+            position: relative;
+            top: 8px;
+            left: -11px;
+         }
+         &-address::before{
+            content: url(./contacts_icons/outline.svg);
+            position: relative;
+            top: 8px;
+            left: -11px;
+         }
+         &-text{
+            margin: 1px 0 25px 35px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+         }
+         &-socialsTitle{
+            margin: 50px 0 28px 0;
+            letter-spacing: 1px;
+         }
+         &-socials{
+            & a{
+                color: #787a80;   
+               }
+               max-width: 304px;
+               display: flex;
+               justify-content: space-between;
+               
+               & a::before{
+                   font-family: iconsoc;
+                   font-size: 24px;
+                   content: attr(data);
+               }
+                 & a:hover{
+                   color:red;
+               }
+         }
+         &-map{
+            width: 705px;
+            height: 412px;
+            margin-top: 30px;
+         }
+    }
+    &__feedback{
+      margin: 180px auto;
+      background: url(./contacts_icons/contacts__feedback-bg.svg) left -15px center no-repeat;
+      display: flex;
+      justify-content: right;
+      &-wrapper{
+         width: 705px;
+         height: 615px;
+      }
+      &-datablocks{
+       height: 404px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: stretch;
+      }
+      &-agreement{
+         display: flex;
+         justify-content: space-between;
+         margin-top: 25px;
+         max-width: 705px;
+      }
+    }
+    
+}

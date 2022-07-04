@@ -29,11 +29,11 @@ export default function Footer() {
                     <div className='footer_item'>
                         <p>SITE MAP</p>
                       <ul>
-                            <li><a href="">About Us</a></li>
-                            <li><Link to="/courses">Courses</Link></li>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contacts</a></li>
+                      <li><Link to='/about'>About Us</Link></li>
+                        <li><Link to="/courses">Courses</Link></li>
+                        <li><Link to="/events">Events</Link></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><Link to="/contacts">Contacts</Link></li>
                       </ul>
                     </div>
                     <div className='footer_item'>
