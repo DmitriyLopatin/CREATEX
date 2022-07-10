@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'blogsIcons';
+    src: url(./fonts/blogsFont.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.blogsMain {
+    padding-top: 152px;
+    max-width: 1230px;
+    margin: 0 auto;
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__menu{
+        margin-top: -2px;
+        margin-bottom: 60px;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tabs {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        max-width: 461px;
+
+        &-item {
+            padding: 10px 20px;
+            color: #9a9ca5;
+            line-height: 25.6px;
+            &::before {
+                font-family: blogsIcons;
+                content: attr(data);
+                position: relative;
+                right: 8px;
+                top: 1px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &-red{
+            color: red;
+            border: 1px solid red;
+            border-radius: 4px;
+        }
+    }
+
+    &__tabs2 {
+        display: flex;
+        max-width: 596px;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color: #424551;
+            margin-right: -25px;
+        }
+        select {
+            height: 44px;
+            width: 160px;
+            border: 1px solid #d7dadd;
+            border-radius: 4px;
+            padding-left: 16px;
+            padding-right: 47px;
+            color: #424551;
+            appearance: none;
+            background: url(../eventsMain/eventsMain_icons&fonts/down-chevron.svg) center right 16px no-repeat;
+        }
+    }
+    &__pageId{
+        display: flex;
+        justify-content: center;
+        margin: 80px auto 180px auto;
+        p{
+            margin-right: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &-rightArrow::after{
+           content: url(../eventsMain/eventsMain_icons&fonts/EventsMain__rightArrow.svg);
+        }
+    }
+}

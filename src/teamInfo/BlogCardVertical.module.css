@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'blogsIcons';
+    src: url(../blogsMain/fonts/blogsFont.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+.main{
+    width: fit-content;
+    position: relative;
+    height: 507px;
+    margin-bottom: 60px;
+}
+
+.content{
+    position: absolute;
+    top: 315px;
+}
+.content span{
+    color: #787a80;
+    font-size: 14px;
+    line-height: 21px;
+}
+.type{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    color: #424551;
+    line-height: 21px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    position: absolute;
+    top:12px;
+    left: 12px;
+}
+
+.type::before{
+    font-family: blogsIcons;
+    content: attr(data);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.date::before, .lasting::before{
+    font-family: blogsIcons;
+    content: '\b901';
+    font-size: 16px;
+    margin-right: 6px;
+    margin-left: 13px;
+    padding-left: 12px;
+    padding-right: 1px;
+    border-left: 1px solid #787a80;
+}
+.lasting::before{
+    content: '\b902';
+}
+.heading{
+    font-size: 20px;
+    line-height: 30px;
+    color: #1e212c;
+    margin-top: 8px;
+}
+.description{
+    color: #424551;
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-top: 8px;
+}
+.act{
+    margin-top: 16px;
+    line-height: 25.6px;
+    color: #1e212c;
+}
+.act::after{
+    content: url(./blogImages/Line_Stroke.svg);
+    position: relative;
+    left: 11px;
+}
