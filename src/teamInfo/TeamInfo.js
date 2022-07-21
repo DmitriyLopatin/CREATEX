@@ -1568,8 +1568,8 @@ export let blogData = [
         blogTheme: 'HR & Recruiting',
         blogDate: 'August 3, 2020',
         blogBackground: BlogImage4,
-        blogLasting: '40 min',
-        blogHeading: 'Should you choose a creative profession if you are attracted to creativity?',
+        blogLasting: '4 min',
+        blogHeading: 'HR statistics: job search,  interviews, hiring and recruiting',
         blogDescription: 'Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...',
         blogAct: 'Read',
         blogAuthor: teamMemberData[3],
@@ -1750,7 +1750,7 @@ export let blogData = [
         blogTheme: 'Design',
         blogDate: 'June 20, 2020',
         blogBackground: BlogImage3,
-        blogLasting: '40 min',
+        blogLasting: '4 min',
         blogHeading: 'Should you choose a creative profession if you are attracted to creativity?',
         blogDescription: 'Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...',
         blogAct: 'Watch',
@@ -1776,7 +1776,7 @@ export let blogData = [
         blogTheme: 'HR & Recruiting',
         blogDate: 'June 13, 2020',
         blogBackground: BlogImage4,
-        blogLasting: '40 min',
+        blogLasting: '4 min',
         blogHeading: 'Should you choose a creative profession if you are attracted to creativity?',
         blogDescription: 'Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...',
         blogAct: 'Watch',
@@ -1958,7 +1958,7 @@ export let blogData = [
         blogTheme: 'Design',
         blogDate: 'April 28, 2020',
         blogBackground: BlogImage3,
-        blogLasting: '40 min',
+        blogLasting: '4 min',
         blogHeading: 'Should you choose a creative profession if you are attracted to creativity?',
         blogDescription: 'Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...',
         blogAct: 'Watch',
@@ -2166,7 +2166,7 @@ export let blogData = [
         blogTheme: 'Design',
         blogDate: 'March 20, 2020',
         blogBackground: BlogImage3,
-        blogLasting: '40 min',
+        blogLasting: '4 min',
         blogHeading: 'Should you choose a creative profession if you are attracted to creativity?',
         blogDescription: 'Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...',
         blogAct: 'Watch',
@@ -2192,7 +2192,7 @@ export let blogData = [
         blogTheme: 'HR & Recruiting',
         blogDate: 'March 13, 2020',
         blogBackground: BlogImage4,
-        blogLasting: '40 min',
+        blogLasting: '4 min',
         blogHeading: 'Should you choose a creative profession if you are attracted to creativity?',
         blogDescription: 'Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...',
         blogAct: 'Watch',
@@ -2394,9 +2394,12 @@ export const EventCardHorizontal = (props) => {
 }
 
 export const BlogCardVertical = (props) => {
-   
+   let style = {
+        transform: `translateX(${props.blogShift}px)`,
+        marginRight: `${props.marginRight}px`
+   }
     return (
-        <div className={blogCardVertical.main}>
+        <div className={blogCardVertical.main} style={style}>
             <p className={blogCardVertical.type} data={props.arr[props.num].blogType[1]}>{props.arr[props.num].blogType[0]}</p>
             <img src={props.arr[props.num].blogBackground} alt="" />
             <div className={blogCardVertical.content}>             

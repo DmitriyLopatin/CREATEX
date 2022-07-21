@@ -2,6 +2,7 @@ import './Contacts.scss'
 import { soc } from '../footer/Footer'
 import {Input2} from '../UI/input/Input'
 import { Button } from '../UI/button/Button'
+import { useEffect } from 'react'
 
 let inputData = [
     ['First Name*','Your first name',52,340,'input'],
@@ -12,6 +13,10 @@ let inputData = [
 ]
 
 export default function Contacts() {
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return (
         <section className='contacts'>
             <div className='contacts__info'>

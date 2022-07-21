@@ -14,6 +14,7 @@ import AboutHR from '../about/about&images/about_directions-hr.svg'
 import AboutDesign from '../about/about&images/about_directions-design.svg'
 import AboutDevelopment from '../about/about&images/about_directions-dev.svg'
 import { TeamCard, teamdata } from '../teamCard/Team-Card'
+import { useEffect } from 'react'
 
 
 let aboutDirectionsContent = [
@@ -53,8 +54,10 @@ let aboutStudyingProcessSteps = [
 ]
 
 
-
 export default function About() {
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <section className='about'>

@@ -44,40 +44,42 @@ export default function BlogsMain() {
     }, [])
 
     return (
-        <section className='blogsMain'>
-            <p className='notificationCenter'>OUR BLOG</p>
-            <p className='headingCenter60'>Createx School Journal</p>
-            <div className='blogsMain__menu'>
-                <div className='blogsMain__tabs'>
-                    {menuArr.map((item, index) =>
-                        <span className={redClass === index ? 'blogsMain__tabs-item blogsMain__tabs-red' : 'blogsMain__tabs-item'} onClick={() => { setRedClass(index); setRedClassOfPage(0);setArrType(item[0]) }} key={menuArr[index][1]} data={menuArr[index][1]}>{menuArr[index][0]}{index == 0 ? '' : 's'}</span>)}
+        <>
+            <section className='blogsMain'>
+                <p className='notificationCenter'>OUR BLOG</p>
+                <p className='headingCenter60'>Createx School Journal</p>
+                <div className='blogsMain__menu'>
+                    <div className='blogsMain__tabs'>
+                        {menuArr.map((item, index) =>
+                            <span className={redClass === index ? 'blogsMain__tabs-item blogsMain__tabs-red' : 'blogsMain__tabs-item'} onClick={() => { setRedClass(index); setRedClassOfPage(0);setArrType(item[0]) }} key={menuArr[index][1]} data={menuArr[index][1]}>{menuArr[index][0]}{index == 0 ? '' : 's'}</span>)}
+                    </div>
+                    <div className='blogsMain__tabs2'>
+                        <p>Blog category</p>
+                        <select name="blogsMain__select" id="blogsMain__select" onChange={event => (setArrTheme(event.target.value), setRedClassOfPage(0))}>
+                            <option value="All">all themes</option>
+                            <option value="Development">development</option>
+                            <option value="Design">design</option>
+                            <option value="HR & Recruiting">hr & recruting</option>
+                            <option value="Marketing">marketing</option>
+                            <option value="Management">management</option>
+                        </select>
+                        <Input width={285} height={44} placeholder={'Search blog'}></Input>
+                    </div>
                 </div>
-                <div className='blogsMain__tabs2'>
-                    <p>Blog category</p>
-                    <select name="blogsMain__select" id="blogsMain__select" onChange={event => (setArrTheme(event.target.value), setRedClassOfPage(0))}>
-                        <option value="All">all themes</option>
-                        <option value="Development">development</option>
-                        <option value="Design">design</option>
-                        <option value="HR & Recruiting">hr & recruting</option>
-                        <option value="Marketing">marketing</option>
-                        <option value="Management">management</option>
-                    </select>
-                    <Input width={285} height={44} placeholder={'Search blog'}></Input>
+                <div className='blogsMain__content'>
+                    {numberBlogsOnPage.map((item, index) => <BlogCardVertical key={arrTypeTheme[index].blogDate} num={item} arr={arrTypeTheme}></BlogCardVertical>)}
                 </div>
-            </div>
-            <div className='blogsMain__content'>
-                {numberBlogsOnPage.map((item, index) => <BlogCardVertical key={arrTypeTheme[index].blogDate} num={item} arr={arrTypeTheme}></BlogCardVertical>)}
-            </div>
-            <div className='blogsMain__pageId'>
-                {pageNumber.map((item, index) => <p style={redClassOfPage === index ? { color: 'red' } : { color: '#424551' }} onClick={() => (setRedClassOfPage(index), window.scrollTo(0, 300))}>{item}</p>)}
-                <p className={arrTypeTheme.length > 8 ? 'blogsMain__pageId-rightArrow' : 'inactiv'} onClick={() => {
-                    if (pageNumber.length - 1 > redClassOfPage) {
-                        setRedClassOfPage(redClassOfPage = redClassOfPage + 1)
-
-                    }
-
-                }}></p>
-            </div>
-        </section>
+                <div className='blogsMain__pageId'>
+                    {pageNumber.map((item, index) => <p style={redClassOfPage === index ? { color: 'red' } : { color: '#424551' }} onClick={() => (setRedClassOfPage(index), window.scrollTo(0, 300))}>{item}</p>)}
+                    <p className={arrTypeTheme.length > 8 ? 'blogsMain__pageId-rightArrow' : 'inactiv'} onClick={() => {
+                        if (pageNumber.length - 1 > redClassOfPage) {
+                            setRedClassOfPage(redClassOfPage = redClassOfPage + 1)
+                        }
+                    }}></p>
+                </div>
+            </section>
+            <div className='blogSubscribe'>
+                </div>
+        </>
     )
 }

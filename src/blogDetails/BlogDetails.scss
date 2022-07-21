@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'blogsIcons';
+    src: url(../blogsMain/fonts/blogsFont.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iconsoc';
+    src: url(../footer/fonts/iconsoc.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.blogDetails {
+    padding-top: 151px;
+
+    main {
+        margin: 0 auto;
+        max-width: 1230px;
+    }
+    article {
+        max-width: 810px;
+    }
+    &__title {
+        margin-bottom: 13px;
+    }
+
+    &__blogType {
+        color: #424551;
+        border-right: 1px solid #424551;
+        font-weight: 400;
+        padding-right: 12px;
+        line-height: 25.6px;
+    }
+
+    &__blogType::before {
+        font-family: blogsIcons;
+        content: attr(data);
+        margin-right: 10px;
+    }
+
+    &__blogTheme {
+        color: #ff3f3a;
+        line-height: 25.6px;
+        margin-left: 11px;
+    }
+    &__substring{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__meta{
+        max-width: 252px;
+        display: flex;
+        justify-content: space-between;
+        color: #787a80;
+        font-weight: 400;
+        line-height: 25.6px;
+        flex: 1;
+        span{
+            text-transform: lowercase;
+        }
+    }
+    &__date::before {
+        font-family: blogsIcons;
+        content: '\b901';
+        margin-right: 10px;
+    }
+    &__lasting::before {
+        font-family: blogsIcons;
+        content: '\b902';
+        margin-right: 10px;
+    }
+    &__socials{
+        max-width: 142px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        line-height: 25px;
+       
+    }
+
+    &__socials-icon {
+        color: #787a80;
+        font-size: 20;
+        &::before {
+            font-family: iconsoc;
+            content: attr(data);
+        }
+        &:hover{
+            color: #ff3f3a;
+            cursor: pointer;
+        }
+    }
+    &__blogHeading{
+        margin-bottom: 26px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__mainText{
+        color: #1e212c;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 75px 0 23px 0;
+    }
+    &__text1{
+        color: #424551;
+        font-weight: 400;
+        line-height: 25.6px;
+        margin: 25px 0;
+    }
+    &__text2{
+        margin-bottom: 20px;
+    }
+    &__testimonials{
+        font-size: 20px;
+        line-height: 30px;
+        color: #1e212c;
+        margin-bottom: 47px;
+        
+        &-text{
+          padding-left: 60px;  
+        }
+        &::before{
+            content: url(../tertimonials/testimonials_braces.svg);
+            position: relative;
+            top: 25px;
+        }
+    }
+    &__contentPoints{
+        color: #424551;
+        font-weight: 400;
+        line-height: 25.6px;
+        padding-left: 17px;
+        margin-bottom: 4px;
+        &::before{
+            content: url(../homepage/hp_about/about_marker.svg);
+            position: relative;
+            right: 16px;
+            top: 2px;
+
+        }
+    }
+    &__substring2{
+        margin-top: 60px;
+    }
+    &__tags{
+        max-width: 374px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        &-singleTag{
+            padding: 5px 16px;
+            font-size: 14px;
+            line-height: 21px;
+            color: #787a80;
+            border: 1px solid #d7dadd;
+            border-radius: 4px;
+        }
+    }
+    &__blogCarusel{
+        max-width: 1230px;
+        margin: 120px auto 180px auto;
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-content{
+            display: flex;
+            overflow: hidden;
+            justify-content: space-between;
+        }
+        &-finish {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto 0 auto;
+            p {
+                font-size: 28px;
+                line-height: 52px;
+                margin-right: 40px;
+            }
+        }
+    }
+    &__blogArrows {
+        position: relative;
+        // right: -9px;
+        top: 33px;
+        span {
+            text-align: center;
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            line-height: 38px;
+            font-size: 30px;
+        }
+        span:hover {
+            transition: 0.3s;
+            color: white;
+            background: #FF3F3A;
+            border-radius: 50%;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}

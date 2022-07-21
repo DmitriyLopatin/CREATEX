@@ -6,10 +6,12 @@
     font-display: swap;
 }
 .main{
+    transition: 0.5s;
     width: fit-content;
     position: relative;
     height: 507px;
     margin-bottom: 60px;
+    
 }
 
 .content{

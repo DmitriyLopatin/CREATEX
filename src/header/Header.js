@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import { Button } from '../UI/button/Button';
 import { useState } from 'react';
 // import { useLocation } from 'react-router-dom';
-import { Link} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 
 
@@ -23,13 +23,13 @@ export default function Header() {
         <header className='header'>
             <div className={qwer}>
                 <div className='left'>
-                    <Link to="/#"><img src={logo} alt="createX" /></Link>
+                    <NavLink to="/#"><img src={logo} alt="createX" /></NavLink>
                     <ul className='nav_links'>
-                        <li><Link to='/about'>About Us</Link></li>
-                        <li><Link to="/courses">Courses</Link></li>
-                        <li><Link to="/events">Events</Link></li>
-                        <li><Link to="/blogs">Blog</Link></li>
-                        <li><Link to="/contacts">Contacts</Link></li>
+                        <li><NavLink to='/about'>About Us</NavLink></li>
+                        <li><NavLink to="/courses">Courses</NavLink></li>
+                        <li><NavLink to="/events">Events</NavLink></li>
+                        <li><NavLink to="/blogs">Blog</NavLink></li>
+                        <li><NavLink to="/contacts">Contacts</NavLink></li>
                     </ul>
                 </div>
                 <div className='right'>

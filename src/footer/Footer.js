@@ -1,6 +1,6 @@
 import './Footer.scss'
 import logo from './logo.svg'
-import {Link} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
 
 export let soc = [
     ["\uf900", 'https://www.facebook.com/'],
@@ -29,11 +29,11 @@ export default function Footer() {
                     <div className='footer_item'>
                         <p>SITE MAP</p>
                       <ul>
-                      <li><Link to='/about'>About Us</Link></li>
-                        <li><Link to="/courses">Courses</Link></li>
-                        <li><Link to="/events">Events</Link></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><Link to="/contacts">Contacts</Link></li>
+                      <li><NavLink to='/about'>About Us</NavLink></li>
+                        <li><NavLink to="/courses">Courses</NavLink></li>
+                        <li><NavLink to="/events">Events</NavLink></li>
+                        <li><NavLink to="/blogs">Blog</NavLink></li>
+                        <li><NavLink to="/contacts">Contacts</NavLink></li>
                       </ul>
                     </div>
                     <div className='footer_item'>
