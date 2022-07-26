@@ -93,4 +93,28 @@
         background: url(./BlogsMain__Subscribe.svg) top center no-repeat;
         height: 454px;
         margin-top: 120px;
+        padding-top: 100px;
+    
+        &__wrapper{
+            max-width: 1230px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: right;
+        }
+        &__content{
+            max-width: 600px;
+        }
+        &__heading{
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 900;
+            color: #1e212c;
+            margin-bottom: 50px;
+        }
+        &__interface{
+            margin-bottom: 24px;
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+        }
     }

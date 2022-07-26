@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 import "../eventDetails/EventDetails.scss"
 import { Button14, Button } from "../UI/button/Button"
 import { soc } from '../footer/Footer'
-import {Input2} from "../UI/input/Input"
+import {Input} from "../UI/input/Input"
 import { cardNum } from "../courseDetails/CourseDetails"
 import { EventCardVertical, eventData } from "../teamInfo/TeamInfo"
 
@@ -101,7 +101,7 @@ export default function EventDetails() {
                 <div className="eventDetails__subscribe-content">
                     <p className="eventDetails__subscribe-heading">Don’t want to miss the best events? Subscribe to our newsletter!</p>
                     <div className="eventDetails__subscribe-interface">
-                        <Input2 placeholder={'Your working email'} typeInput={'input'} width={422} height={52}></Input2>
+                        <Input placeholder={'Your working email'} typeInput={'input'} width={422} height={52}></Input>
                         <Button width={154}>Subscribe</Button>
                     </div>
                     <label className="agreementCheck">
@@ -152,7 +152,7 @@ export default function EventDetails() {
                 </div>
                 <div className='eventDetails__eventCarusel-finish'>
                     <p >Do you want more? </p>
-                    <Button width={215} link={"/courses"}>Explore all events</Button>
+                    <Button width={215} link={"/events"}>Explore all events</Button>
                 </div>
             </div>
         </section>

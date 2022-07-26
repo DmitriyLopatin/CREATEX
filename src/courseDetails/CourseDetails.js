@@ -1,4 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './CourseDetails.scss'
 import { Button, Button14 } from '../UI/button/Button';
@@ -18,7 +18,7 @@ let data = [12, 12, 18, 6];
 
 export let cardNum = [0, 1, 2, 3, 4];
 
-// console.log('first render')
+
 
 export default function CourseDetails() {
     let [sec, setSec] = useState(data[0])
@@ -108,8 +108,8 @@ export default function CourseDetails() {
                 </div>
             </section>
             <section className='courseDetails_steps'>
-                <p className='notification'>MAIN STEPS</p>
-                <p className='heading'>Online learning process</p>
+                <p className='notificationCenter'>MAIN STEPS</p>
+                <p className='headingCenter60'>Online learning process</p>
                 <div className='courseDetails_steps-main'>
                     {steps.map(item => <div className='courseDetails_steps-step'>
                         <div className='courseDetails_steps-stepNum' >

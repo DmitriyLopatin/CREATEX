@@ -20,6 +20,11 @@
     main {
         margin: 0 auto;
         max-width: 1230px;
+        display: flex;
+        justify-content: space-between;
+    }
+    aside{
+        max-width: 342px;
     }
     article {
         max-width: 810px;
@@ -53,9 +58,10 @@
         margin-bottom: 40px;
     }
     &__meta{
-        max-width: 252px;
-        display: flex;
-        justify-content: space-between;
+        p{
+            display: inline-block;
+            margin-right: 24px;
+        }
         color: #787a80;
         font-weight: 400;
         line-height: 25.6px;
@@ -86,10 +92,11 @@
 
     &__socials-icon {
         color: #787a80;
-        font-size: 20;
+        font-size: 20px;
         &::before {
             font-family: iconsoc;
             content: attr(data);
+            
         }
         &:hover{
             color: #ff3f3a;
@@ -106,7 +113,7 @@
         color: #1e212c;
         font-size: 20px;
         line-height: 30px;
-        margin: 75px 0 23px 0;
+        margin: 72px 0 23px 0;
     }
     &__text1{
         color: #424551;
@@ -156,6 +163,11 @@
         align-items: center;
         flex: 1;
         &-singleTag{
+            &:hover{
+                color: white;
+                background-color: #FF3F3A;
+                cursor: pointer;
+            }
             padding: 5px 16px;
             font-size: 14px;
             line-height: 21px;
@@ -207,5 +219,68 @@
             cursor: pointer;
             user-select: none;
         }
+    }
+    &__aside{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        &-header{
+            color: #1e212c;
+            line-height: 24px;
+            margin-bottom: 24px;
+            margin-top: 60px;
+            letter-spacing: 1px;
+        }
+        &-photo{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 3px;
+        }
+        &-right{
+            padding-left: 20px;
+        }
+        &-name{
+            font-size: 20px;
+            line-height: 30px;
+            color: #424551;
+            margin-bottom: 4px;
+        }
+        &-position{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #787a80;
+            
+        }
+        &-socials{
+            max-width: 82px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-bottom{
+            margin-bottom: 24px;
+        }
+        &-blogHeading{
+            color: #1e212c;
+            line-height: 25.6px;
+            &:hover{
+                color: #ff3f3a;
+                cursor: pointer;
+            }
+        }
+        &-tags{
+            color: #1e212c;
+            line-height: 24px;
+            letter-spacing: 1px;
+            margin: 61px 0 29px 0;
+        }
+        &-singleTag{
+            display: inline-block;
+            margin-right: 11px;
+            margin-bottom: 12px;
+        }
+      
     }
 }

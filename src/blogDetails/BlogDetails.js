@@ -1,16 +1,24 @@
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './BlogDetails.scss'
 import { soc } from '../footer/Footer'
 import { useState } from 'react'
 import { cardNum } from '../courseDetails/CourseDetails'
 import { BlogCardVertical, blogData } from '../teamInfo/TeamInfo'
 import { Button } from '../UI/button/Button'
+import { useEffect } from 'react'
+import { Input } from '../UI/input/Input'
+import { BlogSubscribe } from '../blogsMain/BlogsMain'
+
 
 
 export default function BlogDetails() {
 
     let blogArrData = useLocation().state
     let [blogShift, setBlogShift] = useState(0)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <section className='blogDetails'>
@@ -57,11 +65,43 @@ export default function BlogDetails() {
                     </div>
                 </article>
                 <aside>
+                    <Input width={342} height={44} placeholder={'Search blog...'}></Input>
+                    <p className='blogDetails__aside-header'>AUTHOR</p>
+                    <div className='blogDetails__aside'>
+                        <img className='blogDetails__aside-photo' src={blogArrData.blogAuthor.photo} alt="" />
+                        <div className='blogDetails__aside-right'>
+                            <p className='blogDetails__aside-name'>{blogArrData.blogAuthor.name}</p>
+                            <p className='blogDetails__aside-position'>{blogArrData.blogAuthor.position}</p>
+                            <div className='blogDetails__aside-socials'>
+                                <a className='blogDetails__socials-icon' href={soc[4][1]} data={soc[4][0]}></a>
+                                <a className='blogDetails__socials-icon' href={soc[1][1]} data={soc[1][0]}></a>
+                                <a className='blogDetails__socials-icon' href={soc[5][1]} data={soc[5][0]}></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p className='blogDetails__aside-header'>TRENDING ARTICLES</p>
 
+                    {cardNum.map((item, index) => {
+                        if (index < 3) return (
+                            <div className='blogDetails__aside blogDetails__aside-bottom'>
+                                <img className='blogDetails__aside-photo' src={blogData[index].blogBackground} />
+                                <div className='blogDetails__aside-right'>
+                                    <p className='blogDetails__aside-position blogDetails__date'>{blogData[index].blogDate}</p>
+                                    <Link to={{ pathname: `/blogs/${blogData[index].blogHeading}` }} state={blogData[index]}><p className='blogDetails__aside-blogHeading'>{blogData[index].blogHeading}</p></Link>
+                                </div>
+                            </div>
+                        )
+                    })}
+                    <p className='blogDetails__aside-tags'>TAGS</p>
+                    <p className='blogDetails__tags-singleTag blogDetails__aside-singleTag '>#marketing</p>
+                    <p className='blogDetails__tags-singleTag blogDetails__aside-singleTag'>#recruiting</p>
+                    <p className='blogDetails__tags-singleTag blogDetails__aside-singleTag'>#coding</p>
+                    <p className='blogDetails__tags-singleTag blogDetails__aside-singleTag'>#learning</p>
+                    <p className='blogDetails__tags-singleTag blogDetails__aside-singleTag'>#HR</p>
+                    <p className='blogDetails__tags-singleTag blogDetails__aside-singleTag'>#self-development</p>
                 </aside>
             </main>
-            <div className='blogSubscribe'>
-            </div>
+            <BlogSubscribe/>
             <div className='blogDetails__blogCarusel'>
                 <p className='notification' >OUR BLOG</p>
                 <div className='blogDetails__blogCarusel-nav'>

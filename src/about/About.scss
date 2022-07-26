@@ -157,12 +157,15 @@
             font-weight: 400;
             line-height: 25.6px;
         }
+        & a{
+            color: #1e212c;
+        }
         &-link:hover{
             color: #ff3f3a;
             cursor: pointer;
         }
         &-link::after{
-            content: url(../blogCard/Line_Stroke.svg);
+            content: url(../teamInfo/blogImages/Line_Stroke.svg);
             position: relative;
             left: 12px;
             top: 2px;

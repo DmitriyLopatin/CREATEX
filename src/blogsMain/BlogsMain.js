@@ -2,6 +2,8 @@ import './BlogsMain.scss'
 import { blogData, BlogCardVertical } from '../teamInfo/TeamInfo'
 import { useEffect, useState } from 'react'
 import { Input } from '../UI/input/Input'
+import { Button } from '../UI/button/Button'
+
 
 let menuArr = [
     ['All', ''],
@@ -25,9 +27,9 @@ export default function BlogsMain() {
     }
     // console.log(pageNumber.length)
     console.log(arrTypeTheme)
-    
-    for (let i = redClassOfPage*8; i < (redClassOfPage+1)*8; i++) {
-        if(i < arrTypeTheme.length) {
+
+    for (let i = redClassOfPage * 8; i < (redClassOfPage + 1) * 8; i++) {
+        if (i < arrTypeTheme.length) {
             numberBlogsOnPage.push(i)
         }
     }
@@ -35,9 +37,6 @@ export default function BlogsMain() {
 
     // console.log(redClassOfPage*8)
     // console.log(arrTypeTheme.length-(pageNumber.length-1-redClassOfPage)*8)
-
-
-
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -51,7 +50,7 @@ export default function BlogsMain() {
                 <div className='blogsMain__menu'>
                     <div className='blogsMain__tabs'>
                         {menuArr.map((item, index) =>
-                            <span className={redClass === index ? 'blogsMain__tabs-item blogsMain__tabs-red' : 'blogsMain__tabs-item'} onClick={() => { setRedClass(index); setRedClassOfPage(0);setArrType(item[0]) }} key={menuArr[index][1]} data={menuArr[index][1]}>{menuArr[index][0]}{index == 0 ? '' : 's'}</span>)}
+                            <span className={redClass === index ? 'blogsMain__tabs-item blogsMain__tabs-red' : 'blogsMain__tabs-item'} onClick={() => { setRedClass(index); setRedClassOfPage(0); setArrType(item[0]) }} key={menuArr[index][1]} data={menuArr[index][1]}>{menuArr[index][0]}{index == 0 ? '' : 's'}</span>)}
                     </div>
                     <div className='blogsMain__tabs2'>
                         <p>Blog category</p>
@@ -78,8 +77,29 @@ export default function BlogsMain() {
                     }}></p>
                 </div>
             </section>
-            <div className='blogSubscribe'>
-                </div>
+            <BlogSubscribe />
         </>
+    )
+}
+
+export const BlogSubscribe = () => {
+    return (
+        <div className='blogSubscribe'>
+            <div className='blogSubscribe__wrapper'>
+                <div className="blogSubscribe__content">
+                    <p className="blogSubscribe__heading">Want to get the best articles weekly?
+                        Subscribe to our newsletter!</p>
+                    <div className="blogSubscribe__interface">
+                        <Input placeholder={'Your working email'} typeInput={'input'} width={422} height={52}></Input>
+                        <Button width={154}>Subscribe</Button>
+                    </div>
+                    <label className="agreementCheck">
+                        <input className="checkboxFalse" type="checkbox" />
+                        <span className="checkboxTrue"></span>
+                        I agree to receive communications from Createx Online School
+                    </label>
+                </div>
+            </div>
+        </div>
     )
 }

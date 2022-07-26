@@ -31,7 +31,6 @@ ul{
     justify-content: space-between;
 }
 .navbar{
-    // transform: 0.4s;
     max-width: 1264px;
     margin: 0 auto;
     padding: 0 17px;
@@ -56,7 +55,8 @@ ul{
     display: flex;
     flex: 1;
     justify-content: space-between;
-    & a{
+    & span{
+        cursor: pointer;
         color: rgba(66, 69, 81, 1);
     }
 }

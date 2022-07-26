@@ -14,8 +14,8 @@ export default function Main(){
                             </div>
                             <h1 className='header-text'>Enjoy studying with Createx Online Courses</h1>
                             <div className='btns'>
-                                <Button width={148}>About us</Button> 
-                                <Button width={200}>Explore courses</Button> 
+                                <Button width={148} link={"/about"}>About us</Button> 
+                                <Button width={200} link={"/courses"}>Explore courses</Button> 
                             </div>
                        </div>
                         <div className="statistics">

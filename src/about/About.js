@@ -15,6 +15,8 @@ import AboutDesign from '../about/about&images/about_directions-design.svg'
 import AboutDevelopment from '../about/about&images/about_directions-dev.svg'
 import { TeamCard, teamdata } from '../teamCard/Team-Card'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 
 
 let aboutDirectionsContent = [
@@ -69,7 +71,7 @@ export default function About() {
                     <p className='about__main-text'>We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.</p>
                 </div>
                 <div className='about__main-buttons'>
-                    <Button width={193}>Explore events</Button>
+                    <Button width={193} link={"/events"}>Explore events</Button>
                     <Button link={"/courses"} width={199}>Browse courses</Button>
                 </div>
             </main>
@@ -122,7 +124,7 @@ export default function About() {
                                 <div className='about__directions-mainBlock'>
                                     <p className='about__directions-area' style={{ backgroundColor: item[3] }}>{item[1]}</p>
                                     <p className='about__directions-text'>{item[2]}</p>
-                                    <p className='about__directions-link'>Check courses</p>
+                                    <Link to={'*'} className='about__directions-link'>Check courses</Link>
                                 </div>
                             </div>
                         } else {

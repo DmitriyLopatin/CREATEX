@@ -64,7 +64,7 @@ export default function EventsMain() {
                         <input className='eventsMain__menuIndicateItem-form' type="number" value={eventNumber} onChange={(event) => {setEventNumber(event.target.value); setEventNumberOnPage(event.target.value); setRedClass(0)}} />
                         <p className='eventsMain__menuIndicateItem-pageNum'>events per page</p>
                     </div>
-                    <Input placeholder={'Search event...'} width={282} />
+                    <Input placeholder={'Search event...'} width={282} height={44}/>
                     <div className='eventsMain__menuIndicateItem'>
                         <p className='eventsMain__menuIndicateItem-view' style={eventsView == 0? {color:'red'}:{color:'#1e212c'}} data={'\ue900'} onClick={()=>setEventsView(0)}></p>
                         <p className='eventsMain__menuIndicateItem-view eventsMain__menuIndicateItem-view1' style={eventsView == 1 ? {color:'red'}: {color:'#1e212c'}} data={'\ue901'} onClick={()=>setEventsView(1)}></p> 
